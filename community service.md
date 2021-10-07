@@ -5,5 +5,5 @@ CS scripts tend to be extraordinarily personal. Because the path rewards owning 
 ## bean-hccs
 | script name | creator | link | runtime | turns | workshed | garden |
 | ------------|---------|------|---------|-------|----------|--------|
-
+| bean-hccs | worthawholebean (#1972588) | [here](https://github.com/phulin/bean-hccs) | ? | 107-114 turns | asdon | peppermint |
 
