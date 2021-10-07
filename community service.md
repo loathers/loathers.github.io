@@ -40,3 +40,12 @@ bb-hccs is built for much lower-greenbox accounts than any of the scripts listed
 | katarn (#786069) | [here](https://github.com/s-k-z/seventy-hccs) | 12 minutes | 70 turns | pizza | peppermint |
 
 seventy-hccs is not descended from bean-hccs, nor is it a loop script. Instead, it is designed to do exactly what it says on the tin--a 1-day, 70-turn community service script. Katarn is not only the first player to complete a 1/70 run, but he's also the most prolific 1/70 player. The design of both diet.ts and events.ts are well worth your time, as is the rest of it--because seventy-hccs isn't descended from bean-hccs, just about every part of it is going to stand out.
+
+
+## autoscend
+
+| creator | link | runtime | turns | workshed | garden |
+|---------|------|---------|-------|----------|--------|
+| LASS | [here](https://github.com/Loathing-Associates-Scripting-Society/autoscend) | ??? | ??? | any | any |
+
+Do not use autoscend for community service. Please. I'm mentioning it here both to say that, and to point out the one big leg up autoscend has over just about anyone: it has virtually no requirements. Autoscend will do its best to fight tooth and nail to get you to donate that rockin' bod to science, and you don't have to even own a genie bottle. If you, for some reason, need to complete a community service ascension, have 0 iotms, and 0 ability to play turns, sure, fine, use this.
