@@ -46,7 +46,7 @@ seventy-hccs is not descended from bean-hccs, nor is it a loop script. Instead, 
 
 | creator | link | runtime | turns | workshed | garden |
 |---------|------|---------|-------|----------|--------|
-| LASS | [here](https://github.com/Loathing-Associates-Scripting-Society/autoscend) | ??? | ??? | any | any |
+| LASS | [here](https://github.com/Loathing-Associates-Scripting-Society/autoscend) | ??? | 2-3 days | any | any |
 
 Do not use autoscend for community service. Please. I'm mentioning it here both to say that, and to point out the one big leg up autoscend has over just about anyone: it has virtually no requirements. Autoscend will do its best to fight tooth and nail to get you to donate that rockin' bod to science, and you don't have to even own a genie bottle. If you, for some reason, need to complete a community service ascension, have 0 iotms, and 0 ability to play turns, sure, fine, use this.
 
