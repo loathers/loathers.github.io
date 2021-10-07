@@ -49,3 +49,11 @@ seventy-hccs is not descended from bean-hccs, nor is it a loop script. Instead, 
 | LASS | [here](https://github.com/Loathing-Associates-Scripting-Society/autoscend) | ??? | ??? | any | any |
 
 Do not use autoscend for community service. Please. I'm mentioning it here both to say that, and to point out the one big leg up autoscend has over just about anyone: it has virtually no requirements. Autoscend will do its best to fight tooth and nail to get you to donate that rockin' bod to science, and you don't have to even own a genie bottle. If you, for some reason, need to complete a community service ascension, have 0 iotms, and 0 ability to play turns, sure, fine, use this.
+
+## HCCSauto
+
+| creator | link | runtime | turns | workshed | garden |
+|---------|------|---------|-------|----------|--------|
+| iloath | [here](https://gitgud.io/iloath/HCCSauto) | ??? | 2 days | any | any |
+
+HCCSauto is a largely deprecated script known for its simplicity and its ability to complete an ascension with nothing but the VIP & genie bottle, and mortar+weaksauce. It is not re-entrant, it is a 2-day script rather than 1-day (making it equally good for karma-farming, and much worse for meat-farming). A more thorough writup on it can be found [here](https://www.reddit.com/r/kol/wiki/guides/iloath_hccs2).
