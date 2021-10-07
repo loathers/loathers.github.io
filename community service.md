@@ -33,7 +33,7 @@ manny-hccs uses more daily resources than phccs in exchange for higher results. 
 
 bb-hccs is built for much lower-greenbox accounts than any of the scripts listed above. It too is a bean-hccs fork, and is also no longer written for hardcore! bb-hccs is not currently particularly re-entrant--if it throws an error, you may not be able to re-start the script. It is an excellent example of how to adapt high-iotm scripts for lower-iotm use.
 
-# seventy-hccs
+## seventy-hccs
 
 | creator | link | runtime | turns | workshed | garden |
 |---------|------|---------|-------|----------|--------|
