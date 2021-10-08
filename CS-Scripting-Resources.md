@@ -8,7 +8,7 @@ CS scripts tend to be extraordinarily personal. Because the path rewards owning 
 
 | creator | link | runtime | turns | workshed | garden |
 |---------|------|---------|-------|----------|--------|
-| worthawholebean (#1972588) | [here](https://github.com/phulin/bean-hccs) | ? | 107-114 turns | asdon | peppermint |
+| [worthawholebean (#1972588)](https://www.cheesellc.com/kol/profile.php?u=worthawholebean) | [here](https://github.com/phulin/bean-hccs) | ? | 107-114 turns | asdon | peppermint |
 
 **bean-hccs** is the mother or grandmother of the majority of scripts on this list. It is thorough, efficient, and clearly written.  The script still has remnants from the 'mode' combat system that can be found in bcas, and features a complex and robust planner object for the use of Sweet Synthesis. Ironically, it is no longer written for use in hardcore.
 
@@ -16,7 +16,7 @@ CS scripts tend to be extraordinarily personal. Because the path rewards owning 
 
 | creator | link | runtime | turns | workshed | garden |
 |---------|------|---------|-------|----------|--------|
-| phreddrickkv2 (#1515124) | [here](https://github.com/horrible-little-slime/phccs) | 5-6 minutes | 107-110 turns | asdon | peppermint |
+| [phreddrickkv2 (#1515124)](https://www.cheesellc.com/kol/profile.php?u=phreddrickkv2) | [here](https://github.com/horrible-little-slime/phccs) | 5-6 minutes | 107-110 turns | asdon | peppermint |
 
 **phccs** is descended from bean-hccs, but has diverged significantly in structure. It is made for _very_ high-greenbox accounts. It slices the various CS tests into their own files for legibility, and entirely eschews the use of the maximizer in favor of preprogrammed outfits, in order to cut down on runtime.
 
@@ -24,7 +24,7 @@ CS scripts tend to be extraordinarily personal. Because the path rewards owning 
 
 | creator | link | runtime | turns | workshed | garden |
 |---------|------|---------|-------|----------|--------|
-| Manendra (#1483803) | [here](https://github.com/lewismd13/manny-hccs) | 5-6 minutes | 103-107 turns | DNA | peppermint |
+| [Manendra (#1483803)](https://www.cheesellc.com/kol/profile.php?u=manendra) | [here](https://github.com/lewismd13/manny-hccs) | 5-6 minutes | 103-107 turns | DNA | peppermint |
 
 **manny-hccs** uses more daily resources than phccs in exchange for higher results. It is noteable for its execution speed, consistency, and use of the geneticist lab over the asdon in its workshed. It is written in typescript, but was originally forked from an ash version of bean-hccs, making it look quite different from its forebearer.
 
@@ -32,7 +32,7 @@ CS scripts tend to be extraordinarily personal. Because the path rewards owning 
 
 | creator | link | runtime | turns | workshed | garden |
 |---------|------|---------|-------|----------|--------|
-| BurningBMan (#1729599) | [here](https://github.com/burningbman/bb-hccs) | 2.5 minutes | 140-150 turns | pizza | mushroom |
+| [BurningBMan (#1729599)](https://www.cheesellc.com/kol/profile.php?u=burningbman) | [here](https://github.com/burningbman/bb-hccs) | 2.5 minutes | 140-150 turns | pizza | mushroom |
 
 **bb-hccs** is built for much lower-greenbox accounts than any of the scripts listed above. It too is a bean-hccs fork, and is also no longer written for hardcore! bb-hccs is not currently particularly re-entrant--if it throws an error, you may not be able to re-start the script. It is an excellent example of how to adapt high-iotm scripts for lower-iotm use.
 
@@ -48,7 +48,7 @@ CS scripts tend to be extraordinarily personal. Because the path rewards owning 
 
 | creator | link | runtime | turns | workshed | garden |
 |---------|------|---------|-------|----------|--------|
-| Zdrvst (#3286685) | [here](https://github.com/c2talon/c2t_hccs) | ~10 minutes | 134-135 turns | pizza | any |
+| [Zdrvst (#3286685)](https://www.cheesellc.com/kol/profile.php?u=Zdrvst) | [here](https://github.com/c2talon/c2t_hccs) | ~10 minutes | 134-135 turns | pizza | any |
 
 **c2t_hccs** is an actively maintained dedicated ASH script for community service designed to be used by a broad group of players. It requires a fair amount of setup, detailed in the README.md, and one unique aspect of this script is that it works as any class. Zdrvst tends to run it as a Seal Clubber which makes it valuable for barf farming. It is designed to be appropriately re-entrant, and currently terminates before performing any test that takes more than one turn, unless configured to do otherwise.
 If run in softcore, it'll shave about 10 turns off of its expected turncount.
@@ -57,7 +57,7 @@ If run in softcore, it'll shave about 10 turns off of its expected turncount.
 
 | creator | link | runtime | turns | workshed | garden |
 |---------|------|---------|-------|----------|--------|
-| iloath | [here](https://gitgud.io/iloath/HCCSauto) | ??? | 2 days | any | any |
+| [iloath](https://www.cheesellc.com/kol/profile.php?u=iloath) | [here](https://gitgud.io/iloath/HCCSauto) | ??? | 2 days | any | any |
 
 **HCCSauto** is a largely deprecated script known for its simplicity and its ability to complete an ascension with nothing but the VIP & genie bottle, and mortar+weaksauce. It is not re-entrant, and it is a 2-day script rather than 1-day (making it equally good for karma-farming, but much worse for meat-farming). A more thorough writup on it can be found [here](https://www.reddit.com/r/kol/wiki/guides/iloath_hccs2).
 
@@ -65,6 +65,6 @@ If run in softcore, it'll shave about 10 turns off of its expected turncount.
 
 | creator | link | runtime | turns | workshed | garden |
 |---------|------|---------|-------|----------|--------|
-| LASS | [here](https://github.com/Loathing-Associates-Scripting-Society/autoscend) | ??? | 2-3 days | any | any |
+| [LASS](https://github.com/Loathing-Associates-Scripting-Society) | [here](https://github.com/Loathing-Associates-Scripting-Society/autoscend) | ??? | 2-3 days | any | any |
 
 Do not use **autoscend** for community service. Please. It is structured around completing the quests the Council gives the adventurer in normal paths; while it will do its level best in CS, CS support is not an active part of autoscend development. I'm mentioning it here both to say that, and to point out the one big leg up autoscend has over just about anyone: it has virtually no requirements. Autoscend will do its best to fight tooth and nail to get you to donate that rockin' bod to science, and you don't have to even own a genie bottle. If you, for some reason, need to complete a community service ascension, have 0 iotms, and 0 ability to play turns, sure, fine, use this.
