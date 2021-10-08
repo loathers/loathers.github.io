@@ -32,7 +32,7 @@ CS scripts tend to be extraordinarily personal. Because the path rewards owning 
 
 | creator | link | runtime | turns | workshed | garden |
 |---------|------|---------|-------|----------|--------|
-| [BurningBMan (#1729599)](https://www.cheesellc.com/kol/profile.php?u=burningbman) | [here](https://github.com/burningbman/bb-hccs) | 2.5 minutes | 140-150 turns | pizza | mushroom |
+| [BurningBman (#1729599)](https://www.cheesellc.com/kol/profile.php?u=burningbman) | [here](https://github.com/burningbman/bb-hccs) | 2.5 minutes | 140-150 turns | pizza | mushroom |
 
 **bb-hccs** is built for much lower-greenbox accounts than any of the scripts listed above. It too is a bean-hccs fork, and is also no longer written for hardcore! bb-hccs is not currently particularly re-entrant--if it throws an error, you may not be able to re-start the script. It is an excellent example of how to adapt high-iotm scripts for lower-iotm use.
 
