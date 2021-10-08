@@ -57,3 +57,11 @@ Do not use autoscend for community service. Please. I'm mentioning it here both 
 | iloath | [here](https://gitgud.io/iloath/HCCSauto) | ??? | 2 days | any | any |
 
 HCCSauto is a largely deprecated script known for its simplicity and its ability to complete an ascension with nothing but the VIP & genie bottle, and mortar+weaksauce. It is not re-entrant, it is a 2-day script rather than 1-day (making it equally good for karma-farming, and much worse for meat-farming). A more thorough writup on it can be found [here](https://www.reddit.com/r/kol/wiki/guides/iloath_hccs2).
+
+## c2t_hccs
+
+| creator | link | runtime | turns | workshed | garden |
+|---------|------|---------|-------|----------|--------|
+| Zdrvst (#3286685) | [here](https://github.com/c2talon/c2t_hccs) | ~10 minutes | 134-135 days | pizza | mushroom |
+
+c2t_hccs is an actively maintained dedicated ASH script for community service designed to be used by a broad group of players. It requires a fair amount of setup, detailed in the README.md, and one unique aspect of this script is that it is designed--or at least functions well--as a Seal Clubber, which makes it valuable for barf farming. It is designed to be appropriately re-entrant, and currently terminates before performing any test that takes more than one turn, unless configured to do otherwise.
