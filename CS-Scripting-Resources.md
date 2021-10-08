@@ -10,7 +10,7 @@ CS scripts tend to be extraordinarily personal. Because the path rewards owning 
 |---------|------|---------|-------|----------|--------|
 | worthawholebean (#1972588) | [here](https://github.com/phulin/bean-hccs) | ? | 107-114 turns | asdon | peppermint |
 
-**bean-hccs** is the mother or grandmother of the majority of scripts on this list. It is thorough, efficient, and clearly written.  The script still has remnants from the 'mode' combat system that can be found in bcas, and features a complex and robust planner object for the use of Sweet Synthesis. Ironically, given the name, it is no longer written for use in hardcore.
+**bean-hccs** is the mother or grandmother of the majority of scripts on this list. It is thorough, efficient, and clearly written.  The script still has remnants from the 'mode' combat system that can be found in bcas, and features a complex and robust planner object for the use of Sweet Synthesis. Ironically, it is no longer written for use in hardcore.
 
 ## phccs
 
