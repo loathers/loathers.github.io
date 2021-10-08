@@ -1,4 +1,4 @@
-# KoL-Scripting-Resources
+# KoL Scripting Resources
 
 Welcome to the GARFJALEN.
 
