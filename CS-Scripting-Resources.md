@@ -5,6 +5,7 @@ This document is a list of commonly used scripts for ascensions in the Community
 CS scripts tend to be extraordinarily personal. Because the path rewards owning a long tail of marginal IotMs, and each user's [greenboxen](http://cheesellc.com/kol/profile.php?u=captain%20scotch) are slightly different, scripts will often fail for those other than their single intended user. Take this as a caveat before attempting to run any of these, and expect a few strange failures until you either customize the script or match the scripter's suite of IotM resources.
 
 ## bean-hccs
+
 | creator | link | runtime | turns | workshed | garden |
 |---------|------|---------|-------|----------|--------|
 | worthawholebean (#1972588) | [here](https://github.com/phulin/bean-hccs) | ? | 107-114 turns | asdon | peppermint |
