@@ -1,1 +1,14 @@
+# Name of website
+title: KoL Scripting Resources
+
+# Your name to show in the footer
+author: L. A. S. S.
+
+# Navbar links
+navbar-links:
+  CS Scripts: "CS-Scripting-Resources.md"
+  Resources:
+    - LASS Homepage: "https://github.com/Loathing-Associates-Scripting-Society"
+    - Latest Mafia Build: "https://ci.kolmafia.us/job/Kolmafia/"
+
 theme: jekyll-theme-minimal
