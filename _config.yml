@@ -11,4 +11,4 @@ navbar-links:
     - LASS Homepage: "https://github.com/Loathing-Associates-Scripting-Society"
     - Latest Mafia Build: "https://ci.kolmafia.us/job/Kolmafia/"
 
-theme: jekyll-theme-minimal
+remote_theme: godalming123/minimal
