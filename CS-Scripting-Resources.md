@@ -49,7 +49,7 @@ CS scripts tend to be extraordinarily personal. Because the path rewards owning 
 |---------|------|---------|-------|----------|--------|
 | LASS | [here](https://github.com/Loathing-Associates-Scripting-Society/autoscend) | ??? | 2-3 days | any | any |
 
-Do not use autoscend for community service. Please. It is structured around completing the quests the Council gives the adventurer in normal paths; while it will do its level best in CS, CS support is not an active part of autoscend development. I'm mentioning it here both to say that, and to point out the one big leg up autoscend has over just about anyone: it has virtually no requirements. Autoscend will do its best to fight tooth and nail to get you to donate that rockin' bod to science, and you don't have to even own a genie bottle. If you, for some reason, need to complete a community service ascension, have 0 iotms, and 0 ability to play turns, sure, fine, use this.
+Do not use **autoscend** for community service. Please. It is structured around completing the quests the Council gives the adventurer in normal paths; while it will do its level best in CS, CS support is not an active part of autoscend development. I'm mentioning it here both to say that, and to point out the one big leg up autoscend has over just about anyone: it has virtually no requirements. Autoscend will do its best to fight tooth and nail to get you to donate that rockin' bod to science, and you don't have to even own a genie bottle. If you, for some reason, need to complete a community service ascension, have 0 iotms, and 0 ability to play turns, sure, fine, use this.
 
 ## HCCSauto
 
@@ -57,7 +57,7 @@ Do not use autoscend for community service. Please. It is structured around comp
 |---------|------|---------|-------|----------|--------|
 | iloath | [here](https://gitgud.io/iloath/HCCSauto) | ??? | 2 days | any | any |
 
-HCCSauto is a largely deprecated script known for its simplicity and its ability to complete an ascension with nothing but the VIP & genie bottle, and mortar+weaksauce. It is not re-entrant, and it is a 2-day script rather than 1-day (making it equally good for karma-farming, but much worse for meat-farming). A more thorough writup on it can be found [here](https://www.reddit.com/r/kol/wiki/guides/iloath_hccs2).
+**HCCSauto** is a largely deprecated script known for its simplicity and its ability to complete an ascension with nothing but the VIP & genie bottle, and mortar+weaksauce. It is not re-entrant, and it is a 2-day script rather than 1-day (making it equally good for karma-farming, but much worse for meat-farming). A more thorough writup on it can be found [here](https://www.reddit.com/r/kol/wiki/guides/iloath_hccs2).
 
 ## c2t_hccs
 
@@ -65,5 +65,5 @@ HCCSauto is a largely deprecated script known for its simplicity and its ability
 |---------|------|---------|-------|----------|--------|
 | Zdrvst (#3286685) | [here](https://github.com/c2talon/c2t_hccs) | ~10 minutes | 134-135 turns | pizza | any |
 
-c2t_hccs is an actively maintained dedicated ASH script for community service designed to be used by a broad group of players. It requires a fair amount of setup, detailed in the README.md, and one unique aspect of this script is that it works as any class. Zdrvst tends to run it as a Seal Clubber which makes it valuable for barf farming. It is designed to be appropriately re-entrant, and currently terminates before performing any test that takes more than one turn, unless configured to do otherwise.
+**c2t_hccs** is an actively maintained dedicated ASH script for community service designed to be used by a broad group of players. It requires a fair amount of setup, detailed in the README.md, and one unique aspect of this script is that it works as any class. Zdrvst tends to run it as a Seal Clubber which makes it valuable for barf farming. It is designed to be appropriately re-entrant, and currently terminates before performing any test that takes more than one turn, unless configured to do otherwise.
 If run in softcore, it'll shave about 10 turns off of its expected turncount.
