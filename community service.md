@@ -62,6 +62,7 @@ HCCSauto is a largely deprecated script known for its simplicity and its ability
 
 | creator | link | runtime | turns | workshed | garden |
 |---------|------|---------|-------|----------|--------|
-| Zdrvst (#3286685) | [here](https://github.com/c2talon/c2t_hccs) | ~10 minutes | 134-135 days | pizza | mushroom |
+| Zdrvst (#3286685) | [here](https://github.com/c2talon/c2t_hccs) | ~10 minutes | 134-135 turns | pizza | any |
 
-c2t_hccs is an actively maintained dedicated ASH script for community service designed to be used by a broad group of players. It requires a fair amount of setup, detailed in the README.md, and one unique aspect of this script is that it is designed--or at least functions well--as a Seal Clubber, which makes it valuable for barf farming. It is designed to be appropriately re-entrant, and currently terminates before performing any test that takes more than one turn, unless configured to do otherwise.
+c2t_hccs is an actively maintained dedicated ASH script for community service designed to be used by a broad group of players. It requires a fair amount of setup, detailed in the README.md, and one unique aspect of this script is that it works as any class. Zdrvst tends to run it as a Seal Clubber which makes it valuable for barf farming. It is designed to be appropriately re-entrant, and currently terminates before performing any test that takes more than one turn, unless configured to do otherwise.
+If run in softcore, it'll shave about 10 turns off of its expected turncount.
