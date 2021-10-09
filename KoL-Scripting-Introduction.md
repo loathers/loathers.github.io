@@ -44,7 +44,11 @@ That's just me not knowing how to do nontrivial ASH though
 Here we'd describe basic ASH use cases and link a few of the better primers in the mafia wiki.
 
 ### Examples of High-Level ASH Code
-This would probably just be a link to Dictator's pastebin and then "lol" 
+KoL player dev TheDictator has many complex ASH scripts available on [his pastebin](https://pastebin.com/u/thedictator).
+
+[Autoscend](https://github.com/Loathing-Associates-Scripting-Society/autoscend) is a LASS-maintained general-use ascension script written in ASH.
+
+Notoriously prolific KoL scripter [Ezandora](https://github.com/Ezandora) has scores of ASH scripts available on her github.
 
 ### The Pros and Cons of ASH
 Bulleted list in a table outlining good/bad of ASH as a language.
