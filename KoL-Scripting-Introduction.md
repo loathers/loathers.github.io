@@ -18,7 +18,7 @@ Things this should contain:
 - ASH is a specific-use KoL language that was built by KoLMafia's developers, starting with Mafia's inception in 2010 (?) and being improved and maintained since.
 - Javascript is a fundamental programming language used across the internet, primarily for backend webpage functionality and is supported for code execution in all major browsers.
 
-Then, a table with some short 1-liners of how you'd accomplish things in one versus the other. 
+Here are some basic, one-line tasks that you might do in ASH or JS.
 
 | Syntax | ASH | Javascript |
 |---------|------|---|
@@ -53,13 +53,31 @@ Notoriously prolific KoL scripter [Ezandora](https://github.com/Ezandora) has sc
 ### The Pros and Cons of ASH
 | Pros | Cons |
 | ---- | ---- |
-| Quick & easy to use for short and simple scripts | Can get messy when doing more complicated processes|
+| Quick & easy to use for short and simple scripts | Can get messy when doing more complicated processes |
+| Automatically can access all KoLMafia functions, doesn't require importing | -- |
 
 ## Javascript
 
 ### Why Javascript?
 
 The single biggest advantage that Javascript has over ASH is the fact that it is used for other things. A lot of other things, in fact. This does two things for you: first, it means that there are a lot of online resources to assist you in your scripting endeavors; and second, it means that skills you hone while writing KoL scripts will be more applicable elsewhere. Javascript is also [other stuff that I don't know]
+
+### How Javascript?
+
+This is a very silly question that I've put into your mouth, and so it gets a very silly answer. An answer to one interpretation of this question is Rhino, a Javascript engine written in Java (despite their names, these languages are unrelated), that Mafia uses to read Javascript, uh, scripts.
+
+An answer to another interpretation of this question is pretty similar to ASH: just start writing. When you write in Javascript, you'll need to import any mafia functions you plan on using, by having a big chunk of text at the top of your script that basically looks like this:
+```
+const {
+ adv1,
+ availableAmount,
+ buy,
+ drink,
+ eat,
+ getProperty
+} = require("kolmafia");
+```
+Other than that, the world is pretty much your oyster. One thing to note is that you won't need to import fundamental Object types used by KoLMafia: Item, Skill, Effect, Familiar, etc. You will, however, have to import any functions that use these types.
 
 ### Improving your JS development with Typescript
 
