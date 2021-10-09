@@ -51,11 +51,15 @@ KoL player dev TheDictator has many complex ASH scripts available on [his pasteb
 Notoriously prolific KoL scripter [Ezandora](https://github.com/Ezandora) has scores of ASH scripts available on her github.
 
 ### The Pros and Cons of ASH
-Bulleted list in a table outlining good/bad of ASH as a language.
+| Pros | Cons |
+| ---- | ---- |
+| Quick & easy to use for short and simple scripts | Can get messy when doing more complicated processes|
 
 ## Javascript
 
 ### Why Javascript?
+
+The single biggest advantage that Javascript has over ASH is the fact that it is used for other things. A lot of other things, in fact. This does two things for you: first, it means that there are a lot of online resources to assist you in your scripting endeavors; and second, it means that skills you hone while writing KoL scripts will be more applicable elsewhere. Javascript is also [other stuff that I don't know]
 
 ### Improving your JS development with Typescript
 
