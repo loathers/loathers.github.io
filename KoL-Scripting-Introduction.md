@@ -22,9 +22,9 @@ Then, a table with some short 1-liners of how you'd accomplish things in one ver
 
 | Syntax | ASH | Javascript |
 |---------|------|---|
-| Look up an item | $item[squirming slime larva]  | Item.get("squirming slime larva") |
-| Restore MP | restore_mp(69) | restoreMp(69) |
-| Buy a Big Rock | buy(1, $item[big rock]) | buy(1, Item.get("big rock") |
+| Look up an item | `$item[squirming slime larva]`  | `Item.get("squirming slime larva")` |
+| Restore MP | `restore_mp(69)` | `restoreMp(69)` |
+| Buy a Big Rock | `buy(1, $item[big rock])` | `buy(1, Item.get("big rock")` |
 | Kmail Gausie a Holiday Fun | - | - |
 
 Here's an example of a more complex task: returning all one-handed weapons that you have, sorted by familiar weight.
