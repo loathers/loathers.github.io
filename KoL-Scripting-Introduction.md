@@ -25,6 +25,7 @@ Then, a table with some short 1-liners of how you'd accomplish things in one ver
 
 Here's an example of a more complex task: returning all one-handed weapons that you have, sorted by familiar weight.
 In Javascript, this would look like:
+```
 Item.all()
   .filter((item) => availableAmount(item) > 0 && weaponHands(item) === 1)
   .sort((a, b) => numericModifier(b, "Familiar Weight") - numericModifier(a, "Familiar Weight"));
