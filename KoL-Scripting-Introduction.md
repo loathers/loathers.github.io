@@ -1,15 +1,19 @@
 # Introduction
 ## Why script KOL?
-Define the goals of KOL scripting with examples of what you can do with scripts (automate ascensions, automate farming, bring up resources, etc; absolute base-level things, to explain what the underlying reasoning is behind scripting. We could even include a snippet of my old farming spreadsheet where I tried to calculate how much time it took to do barf farming in the years I did it manually before I scripted it, maybe?)
+When it was first created, KoL was designed to be a game you could play during your coffee break. You have 40 adventures, and you can spend those adventures fighting Knob Goblins or Fiendish Cans of Asparagus or crafting advanced cocktails. At this point, however, KoL is a game of enormous scope. You may have thousands of turns to play in a day. You may have hundreds of resources to use. For many players, it is impractical to try to do everything by hand.
+
+If you're reading this, you probably already use KoLMafia. It's a fantastic tool to help play turns quickly and efficiently. With scripts written in ASH or JavaScript, you can have KoLMafia make gameplay decisions for you and execute them: you can automate adventuring, inventory management, and even KMails. Hell, you've probably already used some scripts--autoscend and garbage collector are two popular script that we here at LASS produce, and there are dozens of other scripts that help automate play, simplify resources, and make the game a better experience for everyone.
+
+That all being said, everyone's specific needs and goals are different. There is probably something you'd like to do that is not currently supported by a script. Maybe you have a great idea for improving an existing script, or maybe you need to automate a task that no one has a public script that does. Whatever you need to do in this game, there's probably a way to make it better by scripting it.
 
 ## What are the tools available for scripting KoL?
 Things this should contain:
-- very basic summary of ASH/TS
-- Link to VSCode
+ - The [KoLMafia wiki](https://wiki.kolmafia.us/index.php/Main_Page) has documentation for most existing functions used in Mafia scripts
+- KoLMafia can read scripts written in ASH or Javascript, so anything that supports writing those is a good tool
+- [Visual Studio Code](https://code.visualstudio.com/) is a popular software for scriptwriting that offers, among other things, syntax highlighting and source control
 - Link to Mafia Wiki
 
 # ASH & Javascript
-Start with a two-bullet comparison simply describing each language. Something like:
 
 - ASH is a specific-use KoL language that was built by KoLMafia's developers, starting with Mafia's inception in 2010 (?) and being improved and maintained since.
 - Javascript is a fundamental programming language used across the internet, primarily for backend webpage functionality and is supported for code execution in all major browsers.
