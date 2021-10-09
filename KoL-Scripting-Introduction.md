@@ -18,11 +18,28 @@ Then, a table with some short 1-liners of how you'd accomplish things in one ver
 
 | Syntax | ASH | Javascript |
 |---------|------|---|
-| Look up an item | - | - |
-| Restore MP | - | - |
-| Buy a Big Rock | - | - |
+| Look up an item | $item[squirming slime larva]  | Item.get("squirming slime larva") |
+| Restore MP | restore_mp(69) | restoreMp(69) |
+| Buy a Big Rock | buy(1, $item[big rock]) | buy(1, Item.get("big rock") |
 | Kmail Gausie a Holiday Fun | - | - |
 
+Here's an example of a more complex task: returning all one-handed weapons that you have, sorted by familiar weight.
+In Javascript, this would look like:
+```
+Item.all().filter(
+  (item) =>
+    availableAmount(item) > 0 &&
+    weaponHands(item) === 1
+  ).sort((a, b) => 
+    numericModifier(b, "Familiar Weight") - numericModifier(a, "Familiar Weight")
+  )
+)
+```
+In ASH, the same task would look like
+```
+I'm actually not entirely sure how to do that
+That's just me not knowing how to do nontrivial ASH though
+```
 ## ASH
 ### Common ASH functions and their uses
 Here we'd describe basic ASH use cases and link a few of the better primers in the mafia wiki.
