@@ -36,8 +36,17 @@ Item.all()
 ```
 In ASH, the same task would look like
 ```
-I'm actually not entirely sure how to do that
-That's just me not knowing how to do nontrivial ASH though
+item[int] weapons_by_fam_lbs;		//our desired output
+int count;			//how many items meet our criteria? will be used as the key
+//first we want to go through all items and list those who meet our requirement
+foreach it in $items[]	//go through all items one by one
+{
+	if(available_amount(it) == 0 || weaponHands(it) != 1) continue;		//skip this item as it fails our criteria
+	weapons_by_fam_lbs[count] = it;
+	count++;
+}
+//next we sort it
+sort weapons_by_fam_lbs by numericModifier(value, "Familiar Weight");
 ```
 ## ASH
 ### Common ASH functions and their uses
