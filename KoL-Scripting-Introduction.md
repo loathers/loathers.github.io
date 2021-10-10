@@ -60,7 +60,7 @@ Notoriously prolific KoL scripter [Ezandora](https://github.com/Ezandora) has sc
 
 ### Why Javascript?
 
-The single biggest advantage that Javascript has over ASH is the fact that it is used for other things. A lot of other things, in fact. This does two things for you: first, it means that there are a lot of online resources to assist you in your scripting endeavors; and second, it means that skills you hone while writing KoL scripts will be more applicable elsewhere. Javascript is also [other stuff that I don't know]
+The single biggest advantage that Javascript has over ASH is the fact that it is widely used for other things beyond KoL scripting. What this means is that when you come across a problem or a concept that doesnt make sense, you will have the entirety of the internet's collective Javascript knowledge to provide you an answer as opposed to just things specifically posted about on the KoLmafia forums. As an added bonus, it means that skills you hone while writing KoL scripts will be applicable elsewhere. 
 
 ### How Javascript?
 
@@ -80,5 +80,6 @@ const {
 Other than that, the world is pretty much your oyster. One thing to note is that you won't need to import fundamental Object types used by KoLMafia: Item, Skill, Effect, Familiar, etc. You will, however, have to import any functions that use these types.
 
 ### Improving your JS development with Typescript
+"Hold on!", you protest, "I have just learned about Javascript and it seems cool. Why would you introduce something new!" This is a fair critisism, and if you are trying to script simple actions you can probably stop here. That being said, maybe your appetite has been whet and you are ready to tackle a larger project. In these scenarios, it makes sense to consider Typescript. Typescript is a superset of Javascript, meaning that it has everything Javascript has, but it also has more! The primary advantage Typescript has over Javascript is that it has static typing, this is a programming concept which means, in practical terms, that you can catch certain errors when you are writing the code, as opposed to when KoLMafia is executing the code. This gets to be very important when you are dealing with a large script with many functions and variables. However, this added functionality does not come for free. It comes at the cost of having to transpile, here meaning compile your Typescript into Javascript so KoLmafia can understand it. This involves doing additional setup for the script you are writing.
 
 ### Linting and Libram
