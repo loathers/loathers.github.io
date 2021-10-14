@@ -97,7 +97,7 @@ Notoriously prolific KoL scripter [Ezandora](https://github.com/Ezandora) has sc
 
 ### Why Javascript?
 
-The single biggest advantage that Javascript has over ASH is the fact that it is widely used for other things beyond KoL scripting. What this means is that when you come across a problem or a concept that doesnt make sense, you will have the entirety of the internet's collective Javascript knowledge to provide you an answer as opposed to just things specifically posted about on the KoLmafia forums. As an added bonus, it means that skills you hone while writing KoL scripts will be applicable elsewhere. 
+The single biggest advantage that Javascript has over ASH is the fact that it is widely used for other things beyond KoL scripting. This means that when you come across a problem or a concept that doesn't make sense, you will have the entirety of the internet's collective Javascript knowledge to provide you an answer as opposed to just things specifically posted about on the KoLmafia forums. As an added bonus, it means that skills you hone while writing KoL scripts will be applicable elsewhere. 
 
 ### How Javascript?
 
