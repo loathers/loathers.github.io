@@ -1,5 +1,5 @@
 # Introduction
-## Why script KOL?
+## Why script KoL?
 When it was first created, KoL was designed to be a game you could play during your coffee break. You have 40 adventures, and you can spend those adventures fighting Knob Goblins or Fiendish Cans of Asparagus or crafting advanced cocktails. At this point, however, KoL is a game of enormous scope. You may have thousands of turns to play in a day. You may have hundreds of resources to use. For many players, it is impractical to try to do everything by hand.
 
 If you're reading this, you probably already use [KoLMafia](https://wiki.kolmafia.us/index.php/KoLmafia_Guide). It's a fantastic tool to help play turns quickly and efficiently. With scripts written in ASH or JavaScript, you can have KoLMafia make gameplay decisions for you and execute them: you can automate adventuring, inventory management, and even KMails. Hell, you've probably already used some scripts--[autoscend](https://github.com/Loathing-Associates-Scripting-Society/autoscend) and [garbage collector](https://github.com/Loathing-Associates-Scripting-Society/garbage-collector) are two popular scripts that we here at LASS produce, and there are dozens of other scripts that help automate play, simplify resources, and make the game a better experience for everyone.
