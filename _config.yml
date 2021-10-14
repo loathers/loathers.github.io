@@ -1,11 +1,17 @@
-# Name of website
+# Name of the website
 title: KoL Scripting Resources
+
+# Description of the website
+description: A grand array of resources for Junior Associate Loathing Engineer Newbies
+
+# Don't give a download link. Nobody needs this.
+show_downloads: false
 
 # Your name to show in the footer
 author: L. A. S. S.
 
 # Navbar links
-navbar-links:
+nav:
   CS Scripts: "CS-Scripting-Resources.md"
   Resources:
     - LASS Homepage: "https://github.com/Loathing-Associates-Scripting-Society"
