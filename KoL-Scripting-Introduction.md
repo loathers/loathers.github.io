@@ -64,19 +64,99 @@ drink(1, nightcap);
 ```
 But wait! What if a nefarious actor bought up every single emergency margarita in the mall? Computers are smart, but they're also extraordinarily literal -- if you tell it to purchase a margarita, it will do so, no matter how much meat they cost. Let's add a catch that aborts if margaritas become way too expensive to justify. 
 
--insert code w/ mall catch & abort-
+```
+item nightcap = $item[emergency margarita]);
+
+if (available_amount(nightcap) == 0) buy(1, nightcap, 60000);
+
+if (available_amount(nightcap) == 0) {
+  print("Margs are too pricy for me", "red");
+  abort();
+}
+
+drink(1, nightcap);
+```
 
 There's another issue here -- this code doesn't actually take into account how much drunkenness you have. What if you actually forgot to drink a few points of liver before you ran the script? That might equate to lost adventures, and that just won't do. Let's add a function to this that fills your liver with splendid martinis before the margarita is consumed.
 
--insert code w/ while loop on inebriety, with a catch function-
+
+```
+item filler = $item[splendid martini];
+while (my_inebriety() < inebriety_limit()) {
+  if (available_amount(filler) == 0) buy(1, filler, 10000);
+  if (available_amount(filler) == 0) {
+    print("Splendids are too pricy for me", "red");
+    abort();
+  }
+  drink(1, filler);
+}
+
+item nightcap = $item[emergency margarita]);
+
+if (available_amount(nightcap) == 0) buy(1, nightcap, 60000);
+
+if (available_amount(nightcap) == 0) {
+  print("Margs are too pricy for me", "red");
+  abort();
+}
+
+drink(1, nightcap);
+```
 
 Please note that while loops can be very dangerous; you need to make sure that what you are doing increments, and if it doesn't, you need to include some sort of catch that allows it to break out of an infinite loop. Regardless, there's one last issue here. What about Stooper, the familiar that gives you +1 drunkenness? Let's make sure we're equipping our little buddy for the extra turns.
 
--add stooper support-
+```
+if (have_familiar($familiar[stooper])) use_familiar($familiar[stooper]);
+item filler = $item[splendid martini];
+while (my_inebriety() < inebriety_limit()) {
+  if (available_amount(filler) == 0) buy(1, filler, 10000);
+  if (available_amount(filler) == 0) {
+    print("Splendids are too pricy for me", "red");
+    abort();
+  }
+  drink(1, filler);
+}
+
+item nightcap = $item[emergency margarita]);
+
+if (available_amount(nightcap) == 0) buy(1, nightcap, 60000);
+
+if (available_amount(nightcap) == 0) {
+  print("Margs are too pricy for me", "red");
+  abort();
+}
+
+drink(1, nightcap);
+```
 
 Oh, wait. One last thing! Why not maximize our outfit for adventures, so that this can truly be the last thing we do for the day? Might as well, right?
 
--add equipping lefty if you have him then modmax adventures-
+```
+if (have_familiar($familiar[stooper])) use_familiar($familiar[stooper]);
+item filler = $item[splendid martini];
+while (my_inebriety() < inebriety_limit()) {
+  if (available_amount(filler) == 0) buy(1, filler, 10000);
+  if (available_amount(filler) == 0) {
+    print("Splendids are too pricy for me", "red");
+    abort();
+  }
+  drink(1, filler);
+}
+
+item nightcap = $item[emergency margarita]);
+
+if (available_amount(nightcap) == 0) buy(1, nightcap, 60000);
+
+if (available_amount(nightcap) == 0) {
+  print("Margs are too pricy for me", "red");
+  abort();
+}
+
+drink(1, nightcap);
+
+if (have_familiar($familiar[left-hand man])) use_familiar($familiar[left-hand man]);
+maximize("Adventures", false);
+```
 
 Fantastic. We have a script. We've used quite a few functions in this script,, including [insert list here]. When you're building your own scripts, one of the best ways to learn is to simply pick a simple task and start thinking through what kind of complications could make a simple thing less straightforward. When you figure those out, and start solving them via mafia functions, you quickly turn a very simple one-line script into a larger scale construction that teaches you about all sorts of new functions and commands. 
 
