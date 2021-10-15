@@ -1,9 +1,7 @@
-<!-- Belongs at: /_includes/navigation.html -->
-
 <!-- Build the nav bar. -->
 <nav>
     <ul>
-    {% for entry in site.data.navigation %}
+    {% for entry in site.nav %}
         {% assign sublinks = entry.sublinks %}
         {% if sublinks %}
         <li>
