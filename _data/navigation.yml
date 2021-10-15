@@ -4,8 +4,9 @@
   url: /
 
 - title: An Introduction to KOL Scripting
-  url: /KoL-Scripting-Introduction.html
+  url: /docs/KoL-Scripting-Introduction.html
 - title: Lists of Scripts
+  url: fakeLink
   sublinks:
     - title: Community Service Scripts
-      url: /CS-Scripting-Resources
+      url: /docs/CS-Scripting-Resources
