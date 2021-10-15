@@ -18,5 +18,17 @@ url: https://loathing-associates-scripting-society.github.io/
 # the base URL string
 baseurl: "KoL-Scripting-Resources"
 
+# To populate, add a descriptive title and the name of the file w/ html
+#   instead of md. Put it under sublinks if you would like.
+navbarData: 
+  - title: Home
+    url: /
+  - title: An Introduction to KOL Scripting
+    url: KoL-Scripting-Introduction.html
+  - title: Lists of Scripts
+    sublinks:
+      - title: Community Service Scripts
+        url: CS-Scripting-Resources.html
+
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
