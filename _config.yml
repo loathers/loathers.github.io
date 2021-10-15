@@ -10,14 +10,13 @@ show_downloads: false
 # Your name to show in the footer
 author: L. A. S. S.
 
-# Navbar links
-nav:
-  CS Scripts: "CS-Scripting-Resources.md"
-  Resources:
-    - LASS Homepage: "https://github.com/Loathing-Associates-Scripting-Society"
-    - Latest Mafia Build: "https://ci.kolmafia.us/job/Kolmafia/"
-
 remote_theme: pages-themes/minimal@v0.2.0
+
+# the actual url
+url: https://loathing-associates-scripting-society.github.io/
+
+# the base URL string
+baseurl: "KoL-Scripting-Resources"
 
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
