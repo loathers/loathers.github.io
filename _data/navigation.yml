@@ -1,0 +1,11 @@
+# Belongs at: /_data/navigation.yml
+
+- title: Home
+  url: /
+
+- title: An Introduction to KOL Scripting
+  url: /KoL-Scripting-Introduction.html
+- title: Lists of Scripts
+  sublinks:
+    - title: Community Service Scripts
+      url: /CS-Scripting-Resources
