@@ -4,9 +4,7 @@ When the Kingdom of Loathing (KoL) was first created, it was designed to be a ga
 
 If you're reading this, you probably already use [KoLMafia](https://wiki.kolmafia.us/index.php/KoLmafia_Guide). It's a fantastic tool to help play turns quickly and efficiently. With scripts written in ASH or JavaScript, you can have KoLMafia make gameplay decisions for you and execute them: you can automate adventuring, inventory management, and even KMails. Hell, you've probably already used some scripts--[autoscend](https://github.com/Loathing-Associates-Scripting-Society/autoscend) and [garbage collector](https://github.com/Loathing-Associates-Scripting-Society/garbage-collector) are two popular scripts that we here at LASS produce, and there are dozens of other scripts that help automate play, simplify resources, and make the game a better experience for everyone.
 
-That all being said, everyone's specific needs and goals are different. There is probably something you'd like to do that is not currently supported by a script. Maybe you have a great idea for improving an existing script, or maybe you need to automate a task that no one has a public script that does. 
-
-Whatever you need to do in this game, there's probably a way to make it better by scripting it.
+That all being said, everyone's specific needs and goals are different. There is probably something you'd like to do that is not currently supported by a script. Maybe you have a great idea for improving an existing script, or maybe you need to automate a task that no one has a public script that does. Whatever you need to do in this game, there's probably a way to make it better by scripting it.
 
 ## What are the tools and resources available for scripting KoL?
 There are a number of useful resources you should leverage as you start learning about scripting in KoL:
