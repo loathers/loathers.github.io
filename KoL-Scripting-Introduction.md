@@ -203,6 +203,12 @@ One other important note: the KoLMafia Wiki was written to support ASH. This mea
 
 ### Linting and Libram
 
-LASS provides two very helpful packages for TypeScript projects. The first is [Libram](https://github.com/Loathing-Associates-Scripting-Society/libram), an all-purpose toolkit meant to extend existing mafia functions, with the end goal of making it just about the only external module any KoL scripter will ever need. Its features include the `get()` function, which is a modified version of mafia's `getProperty()` that returns objects of the appropriate type: for example, when you have a Knob Goblin Embezzler digitized, doing `getProperty("_sourceTerminalDigitizeMonster")` would return the string "Knob Goblin Embezzler". However, `get("_sourceTerminalDigitizeMonster")` would return the Knob Goblin Embezzler as a monster, allowing you to plug it right into monster-related functions.
-
+LASS provides two very helpful packages for TypeScript projects. The first is [Libram](https://github.com/Loathing-Associates-Scripting-Society/libram), an all-purpose toolkit meant to extend existing mafia functions, with the end goal of making it just about the only external module any KoL scripter will ever need. Its features include the `get()` function, which is a modified version of mafia's `getProperty()` that returns objects of the appropriate type. It also has a system of template literals that makes it slightly easier to talk about Items and Familiars and Skills and the sort. This small change adds up a lot:
+```
+if (get("_sourceTerminalDigitizeMonster").meatDrop > $monster`garbage tourist`.meatDrop)
+```
+is much shorter and more legible than
+```
+if (toMonster(getProperty("_sourceTerminalDigitizeMonster")).meatDrop > Monster.get("garbage tourist").meatDrop)
+```
 The other spicy package we provide is libram-linked: it is the [eslint Libram plugin](https://github.com/Loathing-Associates-Scripting-Society/eslint-plugin-libram), which is used across all LASS projects. ESLint is a tool that analyzes Javascript and TypeScript code for bad code and bad form, and the plugin allows it also to look for KoL-specific problems. It'll verify that any items, skills, familiars, or other mafia objects are spelled and capitalized correctly, for example, and it'll also enforce various good programming practices. 
