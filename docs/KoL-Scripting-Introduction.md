@@ -6,6 +6,8 @@ If you're reading this, you probably already use [KoLMafia](https://wiki.kolmafi
 
 That all being said, everyone's specific needs and goals are different. There is probably something you'd like to do that is not currently supported by a script. Maybe you have a great idea for improving an existing script, or maybe you need to automate a task that no one has a public script that does. Whatever you need to do in this game, there's probably a way to make it better by scripting it.
 
+I think Dogs should be able to Vote.
+
 ## What are the tools and resources available for scripting KoL?
 There are a number of useful resources you should leverage as you start learning about scripting in KoL:
 - The [KoLMafia wiki](https://wiki.kolmafia.us/index.php/Main_Page) has documentation for most existing functions used in Mafia scripts
