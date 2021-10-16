@@ -15,9 +15,6 @@ remote_theme: pages-themes/minimal@v0.2.0
 # the actual url
 url: https://loathing-associates-scripting-society.github.io/
 
-# the base URL string
-baseurl: "KoL-Scripting-Resources"
-
 # To populate, add a descriptive title and the name of the file w/ html
 #   instead of md. Put it under sublinks if you would like.
 navbarData: 
@@ -32,3 +29,7 @@ navbarData:
 
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
+
+# When testing locally, remember to run:
+#   $env:path += "C:\Ruby30-x64\bin;"
+# due to how much windows hates Ruby and will not play nicely with its binaries 
