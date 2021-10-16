@@ -31,11 +31,11 @@ One other important note: the KoLMafia Wiki was written to support ASH. This mea
 
 LASS provides two very helpful packages for TypeScript projects. The first is [Libram](https://github.com/Loathing-Associates-Scripting-Society/libram), an all-purpose toolkit meant to extend existing mafia functions, with the end goal of making it just about the only external module any KoL scripter will ever need. Its features include the `get()` function, which is a modified version of mafia's `getProperty()` that returns objects of the appropriate type. It also has a system of template literals that makes it slightly easier to talk about Items and Familiars and Skills and the sort. This small change adds up a lot:
 ```
-if (get("_sourceTerminalDigitizeMonster").meatDrop > $monster`garbage tourist`.meatDrop)
+if (get("_sourceTerminalDigitizeMonster").maxMeat > $monster`garbage tourist`.maxMeat)
 ```
 is much shorter and more legible than
 ```
-if (toMonster(getProperty("_sourceTerminalDigitizeMonster")).meatDrop > Monster.get("garbage tourist").meatDrop)
+if (toMonster(getProperty("_sourceTerminalDigitizeMonster")).maxMeat > Monster.get("garbage tourist").maxMeat)
 ```
 The other spicy package we provide is libram-linked: it is the [eslint Libram plugin](https://github.com/Loathing-Associates-Scripting-Society/eslint-plugin-libram), which is used across all LASS projects. ESLint is a tool that analyzes Javascript and TypeScript code for bad code and bad form, and the plugin adds a variety of features, the most important of which is its ability to verify constants. Normally, in Javascript, if I write something like
 ```
