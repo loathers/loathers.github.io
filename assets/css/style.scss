@@ -45,4 +45,23 @@ a:link {
 
 a:hover, a:active, a:visited {
     color:#FFC6A0;
+    font-weight: 400;
+}
+
+h2 a:hover, h2 a:active, h2 a:visited {
+    color:#FFC6A0;
+    font-weight: bold;
+}
+
+wrapper {
+    background-color: #36393F;
+}
+
+header {
+    background-color: #3f4247;
+    padding: 10px;
+}
+
+section {
+    background-color: #36393F;
 }
