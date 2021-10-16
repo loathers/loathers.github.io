@@ -211,4 +211,12 @@ is much shorter and more legible than
 ```
 if (toMonster(getProperty("_sourceTerminalDigitizeMonster")).meatDrop > Monster.get("garbage tourist").meatDrop)
 ```
-The other spicy package we provide is libram-linked: it is the [eslint Libram plugin](https://github.com/Loathing-Associates-Scripting-Society/eslint-plugin-libram), which is used across all LASS projects. ESLint is a tool that analyzes Javascript and TypeScript code for bad code and bad form, and the plugin allows it also to look for KoL-specific problems. It'll verify that any items, skills, familiars, or other mafia objects are spelled and capitalized correctly, for example, and it'll also enforce various good programming practices. 
+The other spicy package we provide is libram-linked: it is the [eslint Libram plugin](https://github.com/Loathing-Associates-Scripting-Society/eslint-plugin-libram), which is used across all LASS projects. ESLint is a tool that analyzes Javascript and TypeScript code for bad code and bad form, and the plugin adds a variety of features, the most important of which is its ability to verify constants. Normally, in Javascript, if I write something like
+```
+Item.get("Unwrapped retro knock-off superhero cape")
+```
+the code will get through just fine, it'll reach mafia, and mafia'll throw a tantrum over the fact that there is no such item. With the eslint Libram plugin, however, it'll catch that
+```
+$item`Unwrapped retro knock-off superhero cape`
+```
+is wrong, and you'll be able to correct it before compiling and running your code.
