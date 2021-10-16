@@ -33,7 +33,9 @@ To test any of these, you can simply run them in the GCLI. For example:
 
 ![image](https://user-images.githubusercontent.com/8014761/137573686-d4e90c08-c499-4848-a2e5-becd44106ee9.png)
 
-These are relatively similar, but differences become more pronounced as scripts get more complicated. Here are two examples of a more complex task: returning all one-handed weapons that you have, sorted by familiar weight. In Javascript, this would look like:
+These are all relatively similar, but differences in syntax and structure become more pronounced as scripts get more complicated. Here are two examples of a more complex task: returning all one-handed weapons that you have, sorted by familiar weight. 
+
+In Javascript, this would look like:
 ```
 Item.all()
   .filter((item) => availableAmount(item) > 0 && weaponHands(item) === 1)
@@ -165,7 +167,9 @@ if (have_familiar($familiar[left-hand man])) use_familiar($familiar[left-hand ma
 maximize("Adventures", false);
 ```
 
-Fantastic. We have a script. We've used quite a few functions in this script,, including [insert list here]. When you're building your own scripts, one of the best ways to learn is to simply pick a simple task and start thinking through what kind of complications could make a simple thing less straightforward. When you figure those out, and start solving them via mafia functions, you quickly turn a very simple one-line script into a larger scale construction that teaches you about all sorts of new functions and commands. 
+Fantastic. We have a script. We went from a very simple [drink()](https://wiki.kolmafia.us/index.php/Drink) statement into a compact script that manages to use quite a few functions in its operation, including [have](https://wiki.kolmafia.us/index.php/Have_familiar)/[use_familiar](https://wiki.kolmafia.us/index.php/Use_familiar), the [$item datatype](https://wiki.kolmafia.us/index.php/Item), [my_inebriety](https://wiki.kolmafia.us/index.php/My_inebriety), [available_amount](https://wiki.kolmafia.us/index.php/Available_amount), [print](https://wiki.kolmafia.us/index.php/Print) statements, [control flow with while/if/abort](https://wiki.kolmafia.us/index.php/Control_Structures), and the notoriously useful [maximize()](https://wiki.kolmafia.us/index.php/Maximize). Pretty cool! 
+
+When you're building your own scripts, one of the best ways to learn is to simply pick a simple task and start thinking through what kind of complications could make a simple thing less straightforward. When you figure those out, and start solving them via mafia functions, you quickly turn a very simple one-line script into a larger scale construction that teaches you about all sorts of new functions and commands. 
 
 ### Examples of High-Level ASH Code
 TheDictator (a player /dev) has many complex ASH scripts available on [his pastebin](https://pastebin.com/u/thedictator).
@@ -173,6 +177,8 @@ TheDictator (a player /dev) has many complex ASH scripts available on [his paste
 [Autoscend](https://github.com/Loathing-Associates-Scripting-Society/autoscend) is a LASS-maintained general-use ascension script written in ASH.
 
 Notoriously prolific KoL scripter [Ezandora](https://github.com/Ezandora) has scores of ASH scripts available on her github.
+
+Finally, as you develop your own scripts, be sure to check the [KoLMafia forums](https://kolmafia.us/), where you can find an entire repository with years and years of ASH scripts -- some burn turns, some change your KOL relay experience, and [some even put an entire decision tree of complex logic behind every combat](https://kolmafia.us/threads/batbrain-a-central-nervous-system-for-consult-scripts.6445/)!
 
 ### The Pros and Cons of ASH
 | Pros | Cons |
