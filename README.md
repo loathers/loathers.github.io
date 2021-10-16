@@ -4,7 +4,7 @@ Welcome to a Grand Array of Resources For Junior Associate Loathing Engineer New
 
 ## For those new to scripting
 
-This is meant to be a source where folks who do not know how to code can go to learn the ropes. If you are new to scripting the Kingdom of Loathing (KOL), and would like to learn, start at our [basic first-step introduction to KoL scripting.](https://loathing-associates-scripting-society.github.io/KoL-Scripting-Resources/CS-Scripting-Resources.html)
+This is meant to be a source where folks who do not know how to code can go to learn the ropes. If you are new to scripting the Kingdom of Loathing (KOL), and would like to learn, start at our [basic first-step introduction to KoL scripting.](https://loathing-associates-scripting-society.github.io/KoL-Scripting-Resources//KoL-Scripting-Introduction.html)
 
 ## For those who want to help
 
