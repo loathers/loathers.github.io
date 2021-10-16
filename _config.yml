@@ -18,10 +18,15 @@ url: https://loathing-associates-scripting-society.github.io/
 # To populate, add a descriptive title and the name of the file w/ html
 #   instead of md. Put it under sublinks if you would like.
 navbarData: 
-  - title: Home
-    url: /
+  - title: Home (GitHub Source)
+    url: https://github.com/Loathing-Associates-Scripting-Society/KoL-Scripting-Resources
+
   - title: An Introduction to KOL Scripting
     url: KoL-Scripting-Introduction.html
+  - title: ASH Overview
+    url: ASH-Overview.html
+  - title: JavaScript Overview
+    url: JS-Overview.html
   - title: Lists of Scripts
     sublinks:
       - title: Community Service Scripts
