@@ -36,20 +36,21 @@ To test any of these, you can simply run them in the GCLI. For example:
 These are all relatively similar, but differences in syntax and structure become more pronounced as scripts get more complicated. Here are two examples of a more complex task: returning all one-handed weapons that you have, sorted by familiar weight. 
 
 In Javascript, this would look like:
-```
+```js
 Item.all()
   .filter((item) => availableAmount(item) > 0 && weaponHands(item) === 1)
   .sort((a, b) => numericModifier(b, "Familiar Weight") - numericModifier(a, "Familiar Weight"));
 ```
 In ASH, the same task would look like this:
-```
+```ash
 item[int] weapons_by_fam_lbs;		//our desired output
 int count;			        //how many items meet our criteria? will be used as the key
 
 //first we want to go through all items and list those who meet our requirement
 foreach it in $items[]	//go through all items one by one
 {
-	if(available_amount(it) == 0 || weapon_hands(it) != 1) continue;		//skip this item as it fails our criteria
+	//skip an item if it fails our criteria
+	if(available_amount(it) == 0 || weapon_hands(it) != 1) continue;
 	weapons_by_fam_lbs[count] = it;
 	count++;
 }
