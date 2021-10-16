@@ -1,12 +1,15 @@
 # Belongs at: /_data/navigation.yml
 
-- title: Home
-  url: /
+- title: Home (GitHub Source)
+  url: https://github.com/Loathing-Associates-Scripting-Society/KoL-Scripting-Resources
 
 - title: An Introduction to KOL Scripting
-  url: /docs/KoL-Scripting-Introduction.html
+  url: KoL-Scripting-Introduction
+- title: ASH Overview
+  url: ASH-Overview
+- title: JavaScript Overview
+  url: JS-Overview
 - title: Lists of Scripts
-  url: fakeLink
   sublinks:
     - title: Community Service Scripts
-      url: /docs/CS-Scripting-Resources
+      url: CS-Scripting-Resources
