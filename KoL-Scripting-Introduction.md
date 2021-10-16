@@ -25,7 +25,7 @@ Here are some basic, one-line tasks that you might do in ASH or JS.
 |---------|------|---|
 | Look up an item | `$item[squirming slime larva]`  | `Item.get("squirming slime larva")` |
 | Restore MP | `restore_mp(69)` | `restoreMp(69)` |
-| Buy a Big Rock | `buy(1, $item[big rock])` | `buy(1, Item.get("big rock")` |
+| Buy a Big Rock | `buy(1, $item[big rock])` | `buy(1, Item.get("big rock"))` |
 
 Here's an example of a more complex task: returning all one-handed weapons that you have, sorted by familiar weight.
 In Javascript, this would look like:
