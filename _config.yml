@@ -21,7 +21,7 @@ url: https://loathing-associates-scripting-society.github.io/
 #   instead of md. Put it under sublinks if you would like.
 navbarData: 
   - title: Home
-    url: /
+    url: 
 
   - title: An Introduction to KOL Scripting
     url: KoL-Scripting-Introduction.html
