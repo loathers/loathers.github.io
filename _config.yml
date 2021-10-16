@@ -12,6 +12,8 @@ author: L. A. S. S.
 
 remote_theme: pages-themes/minimal@v0.2.0
 
+baseurl: KoL-Scripting-Resources/
+
 # the actual url
 url: https://loathing-associates-scripting-society.github.io/
 
@@ -22,15 +24,15 @@ navbarData:
     url: https://github.com/Loathing-Associates-Scripting-Society/KoL-Scripting-Resources
 
   - title: An Introduction to KOL Scripting
-    url: /KoL-Scripting-Introduction.html
+    url: KoL-Scripting-Introduction.html
   - title: ASH Overview
-    url: /ASH-Overview.html
+    url: ASH-Overview.html
   - title: JavaScript Overview
-    url: /JS-Overview.html
+    url: JS-Overview.html
   - title: Lists of Scripts
     sublinks:
       - title: Community Service Scripts
-        url: /CS-Scripting-Resources.html
+        url: CS-Scripting-Resources.html
 
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
