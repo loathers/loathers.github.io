@@ -20,8 +20,8 @@ url: https://loathing-associates-scripting-society.github.io/
 # To populate, add a descriptive title and the name of the file w/ html
 #   instead of md. Put it under sublinks if you would like.
 navbarData: 
-  - title: Home (GitHub Source)
-    url: https://github.com/Loathing-Associates-Scripting-Society/KoL-Scripting-Resources
+  - title: Home
+    url: /
 
   - title: An Introduction to KOL Scripting
     url: KoL-Scripting-Introduction.html
@@ -39,4 +39,6 @@ plugins:
 
 # When testing locally, remember to run:
 #   $env:path += "C:\Ruby30-x64\bin;"
+#   bundle install
+#   and then bundle exec jekyll serve
 # due to how much windows hates Ruby and will not play nicely with its binaries 
