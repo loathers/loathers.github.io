@@ -1,17 +1,44 @@
-# Name of website
+# Name of the website
 title: KoL Scripting Resources
+
+# Description of the website
+description: A grand array of resources for Junior Associate Loathing Engineer Newbies
+
+# Don't give a download link. Nobody needs this.
+show_downloads: false
 
 # Your name to show in the footer
 author: L. A. S. S.
 
-# Navbar links
-navbar-links:
-  CS Scripts: "CS-Scripting-Resources.md"
-  Resources:
-    - LASS Homepage: "https://github.com/Loathing-Associates-Scripting-Society"
-    - Latest Mafia Build: "https://ci.kolmafia.us/job/Kolmafia/"
-
 remote_theme: pages-themes/minimal@v0.2.0
+
+baseurl: KoL-Scripting-Resources/
+
+# the actual url
+url: https://loathing-associates-scripting-society.github.io/
+
+# To populate, add a descriptive title and the name of the file w/ html
+#   instead of md. Put it under sublinks if you would like.
+navbarData: 
+  - title: Home
+    url: 
+
+  - title: An Introduction to KOL Scripting
+    url: KoL-Scripting-Introduction.html
+  - title: ASH Overview
+    url: ASH-Overview.html
+  - title: JavaScript Overview
+    url: JS-Overview.html
+  - title: Lists of Scripts
+    sublinks:
+      - title: Community Service Scripts
+        url: CS-Scripting-Resources.html
 
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
+
+# When testing locally, remember to run:
+#   $env:path += "C:\Ruby30-x64\bin;"
+#   bundle install
+#   and then bundle exec jekyll serve
+# due to how much windows hates Ruby and will not play nicely with its binaries 
