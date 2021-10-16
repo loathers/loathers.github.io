@@ -41,7 +41,7 @@ int count;			//how many items meet our criteria? will be used as the key
 //first we want to go through all items and list those who meet our requirement
 foreach it in $items[]	//go through all items one by one
 {
-	if(available_amount(it) == 0 || weaponHands(it) != 1) continue;		//skip this item as it fails our criteria
+	if(available_amount(it) == 0 || weapon_hands(it) != 1) continue;		//skip this item as it fails our criteria
 	weapons_by_fam_lbs[count] = it;
 	count++;
 }
