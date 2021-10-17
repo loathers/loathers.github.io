@@ -6,7 +6,7 @@ drink(1,$item[emergency margarita]);
 ```
 This is easy and straightforward. You could simply save this as nightCap.ash, run it at the end of every day, and you'd be good on your last drink of the day so long as you always had an Emergency Margarita in your inventory. But what if you didn't? It turns out nightcaps can be a bit more complicated! Let's add a check that purchases an emergency margarita for you, if you don't have one lying around.
 ```ash
-item nightcap = $item[emergency margarita]);
+item nightcap = $item[emergency margarita];
 
 if (available_amount(nightcap) == 0) buy(1, nightcap);
 
@@ -15,7 +15,7 @@ drink(1, nightcap);
 But wait! What if a nefarious actor bought up every single emergency margarita in the mall? Computers are smart, but they're also extraordinarily literal -- if you tell it to purchase a margarita, it will do so, no matter how much meat they cost. Let's add a catch that aborts if margaritas become way too expensive to justify. 
 
 ```ash
-item nightcap = $item[emergency margarita]);
+item nightcap = $item[emergency margarita];
 
 if (available_amount(nightcap) == 0) buy(1, nightcap, 60000);
 
@@ -40,7 +40,7 @@ while (my_inebriety() < inebriety_limit()) {
   drink(1, filler);
 }
 
-item nightcap = $item[emergency margarita]);
+item nightcap = $item[emergency margarita];
 
 if (available_amount(nightcap) == 0) buy(1, nightcap, 60000);
 
@@ -66,7 +66,7 @@ while (my_inebriety() < inebriety_limit()) {
   drink(1, filler);
 }
 
-item nightcap = $item[emergency margarita]);
+item nightcap = $item[emergency margarita];
 
 if (available_amount(nightcap) == 0) buy(1, nightcap, 60000);
 
@@ -92,7 +92,7 @@ while (my_inebriety() < inebriety_limit()) {
   drink(1, filler);
 }
 
-item nightcap = $item[emergency margarita]);
+item nightcap = $item[emergency margarita];
 
 if (available_amount(nightcap) == 0) buy(1, nightcap, 60000);
 
