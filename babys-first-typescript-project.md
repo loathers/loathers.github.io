@@ -1,6 +1,19 @@
 # So you want to start a Typescript project
 
-Good for you! You've made a great choice. You have a grand future ahead of you, but first let's trapse over the bumpy bit. First things first, check out [Captain Scotch's kol-js-starter](https://github.com/docrostov/kol-js-starter) and click "use this template." Set up your hot new repository--give it a name, maybe a description maybe a loving nickname. The repository's README should give pretty detailed instructions as to how to set things up. 
+Good for you! You've made a great choice. You have a grand future ahead of you, but first let's trapse over the bumpy bit. First things first, check out [Captain Scotch's kol-js-starter](https://github.com/docrostov/kol-js-starter) and click "use this template." Set up your hot new repository--give it a name, maybe a description maybe a loving nickname. The repository's README should give pretty detailed instructions as to how to set things up. After you do everything it says, there's a few things you might want to do:
+
+## Symlink your scripts!
+
+A symbolic link is a way of telling your computer "when I tell you to go to folder X, I really want you to just open up folder Y and look in there." It's very useful when you have your own Typescript project up and running! You'll `yarn run build` to build new js files, but without a symbolic link, you'd have to copy and paste those files into your `kolmafia/scripts`directory, which sucks! If you're bugfixing, you'll have to do it over and over and over again. To make a symbolic link, you'll want to open up a terminal with admin powers, and, depending upon your OS, do a thing:
+
+### Windows
+`mklink /D "kolmafiadirectory/scripts/your-repository-name" "repositoryfolder/KoLmafia/scripts`.
+
+### Linux
+Man, i don't know
+
+### iOS
+Who the hell do you think i am? i don't own more than one computer, and i've never in my life learned a thing that didn't directly apply to me
 
 # So how does this all work?
 
