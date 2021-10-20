@@ -23,6 +23,7 @@ Huge thanks to any and all developers who have added to the massive corpus of us
 - Holatuwol & Veracity, the two leading developers of KoLMafia, and all Mafia devs through the years
 - The developers of LASS, who are consistently keeping vital scripts alive and powering the game's speedrunning tools
 - The beautiful and handsome horrible-little-slime, an incredible GitHub 
+- Jim Davis and Jeanne Rose, for obvious reasons
 
 Thanks for reading! Make your first pull request today.
 
