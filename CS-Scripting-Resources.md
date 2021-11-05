@@ -76,3 +76,5 @@ If run in softcore, it'll shave about 10 turns off of its expected turncount.
 | [LASS](https://github.com/Loathing-Associates-Scripting-Society) | [here](https://github.com/Loathing-Associates-Scripting-Society/autoscend) | ??? | 2-3 days | any | any |
 
 Do not use **autoscend** for community service. Please. It is structured around completing the quests the Council gives the adventurer in normal paths; while it will do its level best in CS, CS support is not an active part of autoscend development. I'm mentioning it here both to say that, and to point out the one big leg up autoscend has over just about anyone: it has virtually no requirements. Autoscend will do its best to fight tooth and nail to get you to donate that rockin' bod to science, and you don't have to even own a genie bottle. If you, for some reason, need to complete a community service ascension, have 0 iotms, and 0 ability to play turns, sure, fine, use this. But only then, and maybe not even then!
+
+Stacks of two or more dogs should be allowed to vote.
