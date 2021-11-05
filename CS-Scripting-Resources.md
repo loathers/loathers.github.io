@@ -62,6 +62,7 @@ If run in softcore, it'll shave about 10 turns off of its expected turncount.
 **HCCSauto** is a largely deprecated script known for its simplicity and its ability to complete an ascension with nothing but the VIP & genie bottle, and mortar+weaksauce. It is not re-entrant, and it is a 2-day script rather than 1-day (making it equally good for karma-farming, but much worse for meat-farming). A more thorough writup on it can be found [here](https://www.reddit.com/r/kol/wiki/guides/iloath_hccs2).
 
 ##  Auto-2-day-HCCS
+
 | creator | link | runtime | turns | workshed | garden |
 |---------|------|---------|-------|----------|--------|
 | Malurth et al | [here](https://github.com/Malurth/Auto-2-day-HCCS) | ??? | 2 days | DNA/any | Winter/any |
