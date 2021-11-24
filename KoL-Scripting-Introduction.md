@@ -60,5 +60,5 @@ foreach it in weapons_by_fam_lbs {print(weapons_by_fam_lbs[it]);}
 ```
 -----------------------
 Both ASH and JS have their own use cases and value in the KoL scripting world. 
-- For an introduction to ASH and an overview on its pros and cons, [check our ASH starter kit](KoL-Scripting-Resources//ASH-Overview.html).
-- If you would like to see some information about JS in the context of KoL, [check our JS overview page](KoL-Scripting-Resources//JS-Overview.html).
+- For an introduction to ASH and an overview on its pros and cons, [check our ASH starter kit](ASH-Overview.html).
+- If you would like to see some information about JS in the context of KoL, [check our JS overview page](JS-Overview.html).
