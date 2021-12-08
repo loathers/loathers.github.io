@@ -67,7 +67,7 @@ If run in softcore, it'll shave about 10 turns off of its expected turncount.
 |---------|------|---------|-------|----------|--------|
 | [Asmodais (#2071543)](https://www.cheesellc.com/kol/profile.php?u=asmodais) | [here](https://github.com/Tokoeka/asmo_hccs/) | ~15 minutes | 101-103 turns | DNA | peppermint |
 
-**Asmo-HCCS** is a script frankensteined together from bits and pieces of various hccs scripts, primarily **manny-hccs** and **phccs**. Utilising the DNA-lab, it currently assumes you are a pastamancer and is designed to be optimised for my set of IOTMs and skills and as re-entrant as feasible should it break. Currently optimised for Hardcore, but has some specific pulls if used in Softcore.
+**Asmo-HCCS** is a script frankensteined together from bits and pieces of various hccs scripts, primarily **manny-hccs** and **phccs**. Utilising the DNA-lab, it currently assumes you are a pastamancer and is designed to be optimised for Asmodais' set of IOTMs and skills and as re-entrant as feasible should it break. Currently optimised for Hardcore, but has some specific pulls if used in Softcore.
 
 ## HCCSauto
 
