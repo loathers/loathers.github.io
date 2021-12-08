@@ -61,6 +61,14 @@ If run in softcore, it'll shave about 10 turns off of its expected turncount.
 
 **fizz-sccs** is an ASH script structurally inspired by seventy-hccs that borrows code from c2t_hccs. More news as this develops!
 
+## Asmo-hccs
+
+| creator | link | runtime | turns | workshed | garden |
+|---------|------|---------|-------|----------|--------|
+| [Asmodais (#2071543)](https://www.cheesellc.com/kol/profile.php?u=asmodais) | [here](https://github.com/Tokoeka/asmo_hccs/) | ~15 minutes | 101-103 turns | DNA | peppermint |
+
+**Asmo-hccs** is a script frankensteined together from bits and pieces of various hccs scripts, primarily **manny-hccs** and **phccs**. Utilising the DNA-lab, it currently assumes you are a pastamancer and is designed to be optimised for my set of IOTMs and skills and as re-entrant as feasible should it break. 
+
 ## HCCSauto
 
 | creator | link | runtime | turns | workshed | garden |
