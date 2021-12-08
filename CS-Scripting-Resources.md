@@ -53,6 +53,14 @@ CS scripts tend to be extraordinarily personal. Because the path rewards owning 
 **c2t_hccs** is an actively maintained dedicated ASH script for community service designed to be used by a broad group of players. It requires a fair amount of setup, detailed in the README.md, and one unique aspect of this script is that it works as any class. Zdrvst tends to run it as a Seal Clubber which makes it valuable for barf farming. It is designed to be appropriately re-entrant, and currently terminates before performing any test that takes more than one turn, unless configured to do otherwise.
 If run in softcore, it'll shave about 10 turns off of its expected turncount.
 
+## fizz-sccs
+
+| creator | link | runtime | turns | workshed | garden |
+|---------|------|---------|-------|----------|--------|
+| [Mr. FizzyBubs (ign Baden) (#2460823)](https://cheesellc.com/kol/profile.php?u=Baden) | [here](https://github.com/MrFizzyBubbs/fizz-sccs) | ~10 minutes | 111 turns | DNA | Peppermint |
+
+**fizz-sccs** is an ASH script structurally inspired by seventy-hccs that borrows code from c2t_hccs. More news as this develops!
+
 ## HCCSauto
 
 | creator | link | runtime | turns | workshed | garden |
