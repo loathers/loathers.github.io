@@ -46,3 +46,7 @@ the code will get through just fine, it'll reach mafia, and mafia'll throw a tan
 $item`Unwrapped retro knock-off superhero cape`
 ```
 is wrong, and you'll be able to correct it before compiling and running your code.
+
+## Starting with TypeScript
+
+TypeScript can be a bit intimidating. Due to the additional hassle in setting a TypeScript project up, we have made a starter library that starts you on your TypeScript journey. Please visit [the following repository](https://github.com/docrostov/kol-ts-starter) if you would like to start your very first KOL TypeScript project, and (as always) reach out on the #mafia-and-scripting channel on the Ascension Speed Society Discord if you have any questions. We'd be happy to help!
