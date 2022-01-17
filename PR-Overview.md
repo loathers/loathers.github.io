@@ -40,11 +40,11 @@ git switch newBranchName
 I can't walk you through this step. Just do whatever you want to do to the code. Fly freely, modifying code as you see fit to fulfill your basest desires. (Or just make the change you need to make, that works too.)
 
 **STEP 6: COMMIT YOUR CHANGES TO YOUR BRANCH**
-Now that you've made your changes (and saved them! YOU HAVE TO SAVE THEM!), you need to add your changes to the internet. To do this, you need to do a series of three commands, listed here. The first command adds your new files and ensures that Git understands that you've made changes. The second command applies a commit message, so that you know what your changes mean later on. And the final command pushes your branch up into the branch stored on GitHub.com, which will allow you to make the pull request we have been teasing this entire article.
+Now that you've made your changes (and saved them! YOU HAVE TO SAVE THEM!), you need to add your changes to the internet. To do this, you need to do a series of three commands, listed here. The first command adds your new files and ensures that Git understands that you've made changes. The second command applies a commit message, so that you know what your changes mean later on. And the final command pushes your branch up into the branch stored on GitHub.com, which will allow you to make the pull request we have been teasing this entire article. The "set-upstream" part is important because GitHub needs to know what your new branch is based on. Since you just forked the project, it is (obviously) based on origin. 
 ```
 git add .
 git commit -m 'insert a message that describes what changes you've made to the code here'
-git push origin
+git push --set-upstream origin nameOfBranch
 ```
 
 **STEP 7: MAKE THE DANG PULL REQUEST**
