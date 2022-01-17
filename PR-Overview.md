@@ -59,7 +59,7 @@ git push --set-upstream origin nameOfBranch
 
 **STEP 7: MAKE THE DANG PULL REQUEST**
 
-Hey, guess what! You can finally make a pull request. To make the pull request, go to the base branch on GitHub, and click on the "New Pull Request" button.
+Hey, guess what! You can finally make a pull request. To make the pull request, go to the upstream project (the one that you initially forked from) on GitHub, and click on the "New Pull Request" button.
 
 ![image](https://user-images.githubusercontent.com/8014761/149842328-f97ee8de-9859-45b3-aa0f-ed31ac615ce0.png)
 
@@ -76,3 +76,6 @@ Type up a descriptive message about your PR, post it up, and wait for the projec
 ## More Pull Request Resources
 - [MakeAPullRequest.com](https://makeapullrequest.com/) features a video tutorial on how to make PRs that don't make project owners tear their hair out. It's a useful thing to watch, but may be a bit overwhelming to first time PR hopefuls.
 - [This GIST](https://gist.github.com/Chaser324/ce0505fbed06b947d962) features a ton of commands that help outline ways to manage your own forks and clones and all that nonsense. It's a useful reference tool when you simply cannot remember what terminal command you need.
+- If you are using VSCode for your development environment, there are ways to perform this whole process through VSCode's graphical user interface!
+    - You'll want to use the "source control" tab, which you can activate by pressing CTRL + SHIFT + G. That's right, G is for GitHub!  
+    - Visit [this VSCode documentation page](https://code.visualstudio.com/docs/editor/github) for a walkthrough on how you'd go about using the tab and other extensions to create a fully GUI-powered pull request.
