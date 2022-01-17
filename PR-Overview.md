@@ -13,11 +13,13 @@ When contributing to a project, there are 7 core steps to keep in mind.
 
 **STEP 1: FORK THE PROJECT**
 In non-programmer speak, a "fork" is simply a copy of a project; it is your copy that you can mess with code on without messing up the main project. To "fork" a GitHub codebase, go to the core project on the project's GitHub repository, and use the button in the top right corner. It looks like this!
+![image](https://user-images.githubusercontent.com/8014761/149842215-21d9b52c-50fa-4693-8d5c-0a9f9d6c7ed2.png)
 
 **STEP 2: CLONE YOUR FORK ONTO YOUR LOCAL MACHINE**
 Just making your fork is simply not enough. You must also "clone" the fork. I've always felt "cloning" is a weird term for it, but when we say "clone", we simply mean that you are downloading the code to your local machine and initializing all the fun Git architecture around it that allows you to modify and mess with your repository locally. To do this, you will get the URL of your forked project, like so:
+![image](https://user-images.githubusercontent.com/8014761/149842243-09ad81ea-ab94-43cb-8475-6bc1375da62f.png)
 
-After doing this, you will type the following into your command prompt, once you've navigated to a folder you'd feel comfortable working in:
+Click the double-rectangles, next to the URL. After doing this, you will type the following into your command prompt, once you've navigated to a folder you'd feel comfortable working in:
 ```
 git clone [the URL you copied]
 ```
@@ -50,9 +52,15 @@ git push --set-upstream origin nameOfBranch
 **STEP 7: MAKE THE DANG PULL REQUEST**
 Hey, guess what! You can finally make a pull request. To make the pull request, go to the base branch on GitHub, and click on the "New Pull Request" button.
 
+![image](https://user-images.githubusercontent.com/8014761/149842328-f97ee8de-9859-45b3-aa0f-ed31ac615ce0.png)
+
 From here, click on "compare across forks", like so.
 
-This will allow you to select your fork, and from your fork, select the branch you just made.
+![image](https://user-images.githubusercontent.com/8014761/149842360-8bf116ef-bf0d-4d5a-a792-e49b4725510d.png)
+
+This will allow you to select your fork, and from your fork, select the branch you just made. You will be keeping "main" on the left and your fork/branch on the right, like so:
+
+![image](https://user-images.githubusercontent.com/8014761/149842392-9f090f94-d291-4323-a2f7-d36abcb48e4d.png)
 
 Type up a descriptive message about your PR, post it up, and wait for the project owner to see it and provide commentary on your beautiful changes. The world is now your oyster. You have made a PR!
 
