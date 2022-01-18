@@ -15,7 +15,7 @@ When contributing to a project, there are 7 core steps to keep in mind.
 
 In non-programmer speak, a "fork" is simply a copy of a project; it is your copy that you can mess with code on without messing up the main project. To "fork" a GitHub codebase, go to the core project on the project's GitHub repository, and use the button in the top right corner. It looks like this!
 
-![image](https://user-images.githubusercontent.com/8014761/149842215-21d9b52c-50fa-4693-8d5c-0a9f9d6c7ed2.png)
+![image](https://user-images.githubusercontent.com/8014761/149850326-b00d5268-12e7-4b74-ae9d-4d738ef1edf4.png)
 
 **STEP 2: CLONE YOUR FORK ONTO YOUR LOCAL MACHINE**
 
