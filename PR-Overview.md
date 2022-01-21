@@ -5,9 +5,20 @@ Let's say you've been on the ASS Discord for a while, or you've been messaging w
 
 Before we get into the protocol for a pull request, it's important to understand what exactly a pull request is. GitHub is a wonderful tool, and the best-in-class collaboration engine for coders and scripters throughout the world of programming. But it also can be quite opaque; if you aren't immersed in the specifics of Git workflow, it can be extremely hard to understand exactly what certain terms mean. At a high level, a **pull request** involves writing changes to code within a codebase on GitHub, letting the owners of that codebase know that you're suggesting changes, and giving them the opportunity to look through your changes and accept or reject them. It is, in essence, a request for the owners of the codebase to "pull" your changes in from your sample code into the base repository.
 
-Writing a pull request, even for a simple task, can be a bit daunting. This guide represents our best efforts to demystify that process and outline exactly how you would go about structuring a pull request for any LASS repository you'd like to see changes to. We'll be referring to pull requests as "PRs" for most of this guide, because we respect you, your time, and acronyms. One important caveat -- while this is a genericized guide, some projects may have additional hurdles that your PRs need to pass before being added to the base project. The most important example of this is [autoscend](https://github.com/Loathing-Associates-Scripting-Society/autoscend/blob/master/docs/CONTRIBUTING.md), which has a strict series of rules that must be followed to the letter if you want to add code to it. This guide is largely focused on contributing to TypeScript projects, as there are several layers in here (specifically all the Yarn stuff) that are non-obvious to a new contributor and save you a lot of heartache later.
+Writing a pull request, even for a simple task, can be a bit daunting -- but it doesn't have to be. This guide represents our best efforts to demystify that process and outline exactly how you would go about structuring a pull request for any LASS repository you'd like to see changes to. We'll be referring to pull requests as "PRs" for most of this guide, because we respect you, your time, and acronyms. One important caveat -- while this is a genericized guide, some projects may have additional hurdles that your PRs need to pass before being added to the base project. The most important example of this is [autoscend](https://github.com/Loathing-Associates-Scripting-Society/autoscend/blob/master/docs/CONTRIBUTING.md), which has a strict series of rules that must be followed to the letter if you want to add code to it. This guide is largely focused on contributing to TypeScript projects, as there are several layers in here (specifically all the Yarn stuff) that are non-obvious to a new contributor and save you a lot of heartache later.
 
-## Basic Pull Requests
+## Basic Pull Requests (using the VSCode Terminal)
+
+There are many, many ways to perform pull requests. There are three primary methods we want to highlight:
+
+- Using GitHub Desktop
+- Using the VSCode GUI
+- Using VSCode & the VSCode Terminal
+
+For this guide, we are going to focus on that last method, where we utilize the VSCode Terminal. There's nothing wrong with the other two methods, to be clear! We are only focusing on this method because we've found it to be the most straightforward to consistently walk through, as the terminal commands are not going to change over time, but the graphical user interface on GitHub Desktop and VSCode change with some frequency. Before we move on:
+
+- If you are not comfortable with using the command line, try installing [GitHub Desktop](https://desktop.github.com/) and follow the [steps in this pull request guide straight from GitHub](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/working-with-your-remote-repository-on-github-or-github-enterprise/creating-an-issue-or-pull-request). 
+- If you need a bit of an outline on basic terminal usage, and want a Git installation walkthrough, [click here](#commandPrompt). Otherwise, read on!
 
 When contributing to a project, there are 7 core steps to keep in mind.
 
@@ -23,14 +34,14 @@ Just making your fork is simply not enough. You must also "clone" the fork. I've
 
 ![image](https://user-images.githubusercontent.com/8014761/149842243-09ad81ea-ab94-43cb-8475-6bc1375da62f.png)
 
-Click the double-rectangles, next to the URL. After doing this, you will type the following into your command prompt, once you've navigated to a folder you'd feel comfortable working in:
+Click the double-rectangles, next to the URL. After doing this, and after [navigating within the terminal](#navigateTerminal) to a folder you want to place your repository into, you will type the following into your command prompt, once you've navigated to a folder you'd feel comfortable working in:
 ```
 git clone [the URL you copied]
 ```
 
 **STEP 3: INSTALL DEPENDENCIES, IF IT'S A TYPESCRIPT PROJECT** 
 
-This is a pretty important step. Many ASS repositories are written in TypeScript. When you are working on a TypeScript project, there's a variety of tools and necessary repositories that your code editor (likely VSCode) will need to access in order to tell you if you've written your code correctly or properly format your final saves. Luckily, this is actually a very simple step. Just run the following code, which will force yarn to grab the project's dependencies and install them all into your project folder:
+This is a pretty important step. Many LASS repositories are written in TypeScript. When you are working on a TypeScript project, there's a variety of tools and necessary repositories that your code editor (likely VSCode) will need to access in order to tell you if you've written your code correctly or properly format your final saves. Luckily, this is actually a very simple step. Just run the following code, which will force yarn to grab the project's dependencies and install them all into your project folder:
 ```
 yarn install
 ```
@@ -43,6 +54,7 @@ git branch
 git branch newBranchName
 git switch newBranchName
 ```
+One small syntax thing -- branch names cannot have spaces in them. So, "my-cool-branch" and "myCoolBranch" both work. But "my cool branch" does not. 
 
 **STEP 5: MAKE YOUR CODE CHANGES**
 
@@ -79,3 +91,24 @@ Type up a descriptive message about your PR, post it up, and wait for the projec
 - If you are using VSCode for your development environment, there are ways to perform this whole process through VSCode's graphical user interface!
     - You'll want to use the "source control" tab, which you can activate by pressing CTRL + SHIFT + G. That's right, G is for GitHub!  
     - Visit [this VSCode documentation page](https://code.visualstudio.com/docs/editor/github) for a walkthrough on how you'd go about using the tab and other extensions to create a fully GUI-powered pull request.
+
+
+## Working in the VSCode Command Prompt <a name="commandPrompt"></a>
+
+To open the terminal in VSCode, start by [installing and opening VSCode.](https://code.visualstudio.com/download) You will open the terminal by typing " CTRL + SHIFT + ` " or using the following menu in the VSCode top menu.
+
+![image](https://user-images.githubusercontent.com/8014761/150451917-26357b70-e5e8-419d-b549-9a73b8ff1270.png)
+
+From there, you'll see the following window on the bottom of the screen.
+
+![image](https://user-images.githubusercontent.com/8014761/150452450-8279bc9d-22de-4ec9-96de-396314635fb5.png)
+
+ I am currently on Windows, so it shows Windows Powershell; if you're on a Mac or Linux machine, you will likely have something a bit different. It can be a bit intimidating to work in the terminal -- luckily, this how-to will show you essentially everything you need to do to utilize the terminal for pull requests. 
+ 
+ <a name="navigateTerminal"></a>When you are in the terminal, there are two main commands you'll need to use -- `ls` ("list directory") and `cd` ("change directory"). When you use `ls`, it will list out the contents of the folder you're in:  
+ 
+ ![image](https://user-images.githubusercontent.com/8014761/150453426-7273150a-1d5f-491b-96c7-b76654839e3d.png)
+
+Once you see the contents, you'll simply use `cd` to move into the folders you need to go to. While writing a `cd` command, you can use your tab key on your keyboard to autocomplete. (If you want to move up a directory, use `cd ..` -- that will move you up one folder.) I would recommend making a GitHub folder within your documents folder that can serve as a landing spot for any project you intend to create a pull request for. 
+
+As a last step, you should [go install Git](https://github.com/git-guides/install-git). That guide should walk you through the right install procedure for your local machine. Once you've done that, you're ready to start figuring out basic pull requests!
