@@ -81,7 +81,7 @@ From here, click on "compare across forks", like so.
 
 This will allow you to select your fork, and from your fork, select the branch you just made. You will be keeping "main" on the left and your fork/branch on the right, like so:
 
-![image](https://user-images.githubusercontent.com/8014761/149842392-9f090f94-d291-4323-a2f7-d36abcb48e4d.png)
+![image](https://user-images.githubusercontent.com/8014761/151403876-7e31e14e-e00c-461e-8672-d0277c970d74.png)
 
 Type up a descriptive message about your PR, post it up, and wait for the project owner to see it and provide commentary on your beautiful changes. The world is now your oyster. You have made a PR!
 
