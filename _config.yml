@@ -26,6 +26,8 @@ navbarData:
     url: ASH-Overview.html
   - title: JavaScript Overview
     url: JS-Overview.html
+  - title: How to make a Pull Request
+    url: PR-Overview.html
   - title: Lists of Scripts
     sublinks:
       - title: Community Service Scripts
