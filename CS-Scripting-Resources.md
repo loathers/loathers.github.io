@@ -69,6 +69,14 @@ If run in softcore, it'll shave about 10 turns off of its expected turncount.
 
 **Asmo-HCCS** is a script frankensteined together from bits and pieces of various hccs scripts, primarily **manny-hccs** and **phccs**. Utilising the DNA-lab, it currently assumes you are a pastamancer and is designed to be optimised for Asmodais' set of IOTMs and skills and as re-entrant as feasible should it break. Currently optimised for Hardcore, but has some specific pulls if used in Softcore.
 
+## DC6S
+
+| creator | link | runtime | turns | workshed | garden |
+|---------|------|---------|-------|----------|--------|
+| [DanceCommander6 (#1892258)](https://www.cheesellc.com/kol/profile.php?u=DanceCommander6) | [here](https://github.com/ktpolanski/dc6s) | ~10 minutes | 105 turns | asdon | peppermint |
+
+**DC6S** takes inspiration from a number of established CS scripts, mainly **manny-hccs**, **phccs** and **seventy-hccs**. The author was learning about CS and TS as the script got made, which is evident in the simpler syntax, excessive commenting, and a run plan in spreadsheet form with accompanying discussion. There's also a baked in half-loop script that adds a garbo leg on either side of the ascension for minimum effort to play the game.
+
 ## HCCSauto
 
 | creator | link | runtime | turns | workshed | garden |
