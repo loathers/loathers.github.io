@@ -57,9 +57,9 @@ If run in softcore, it'll shave about 10 turns off of its expected turncount.
 
 | creator | link | runtime | turns | workshed | garden |
 |---------|------|---------|-------|----------|--------|
-| [Mr. FizzyBubs (ign Baden) (#2460823)](https://cheesellc.com/kol/profile.php?u=Baden) | [here](https://github.com/MrFizzyBubbs/fizz-sccs) | ~10 minutes | 111 turns | DNA | Peppermint |
+| [MrFizzyBubbs (ign Baden) (#2460823)](https://cheesellc.com/kol/profile.php?u=Baden) | [here](https://github.com/MrFizzyBubbs/fizz-sccs) | ~10 minutes | 111 turns | DNA | Peppermint |
 
-**fizz-sccs** is an ASH script structurally inspired by seventy-hccs that borrows code from c2t_hccs. More news as this develops!
+**fizz-sccs** is an ASH script structurally inspired by seventy-hccs that borrows code from c2t_hccs. This script trades flexiblity for reliability and will likely not run for users missing any of the IotMs it uses. It is also re-entrant and aims to minimize usage of profitable daily flags.
 
 ## Asmo-HCCS
 
