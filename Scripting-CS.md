@@ -21,7 +21,7 @@ The non-stat tests are pretty much just a checklist. Captain Scotch created a [v
 
 Another aspect of planning a run are softcore pulls. These can be used to cut turns from tests, or compensate for lacking certain IotM. For example, it's common to pull [borrowed time](https://kol.coldfront.net/thekolwiki/index.php/Borrowed_time) to help with generating turns for coil wire if not in possession of [Clip Art](https://kol.coldfront.net/thekolwiki/index.php/Summon_Clip_Art).
 
-If in need of assistance, ask in `#community-service` in the [ASS discord](https://discord.com/invite/kol). Be prepared with your [snapshot](http://forums.kingdomofloathing.com/vb/showthread.php?t=218735), as it allows for better theorycrafting of a levelling plan or whatever else you may need help with. There are a lot of helpful pinned messages, such as a full-shiny ordering of scaling fights based on their caps or lists of easily accessible pizza ingredients. The folks there are very helpful - I went from an AFK farmer to creating my own CS script in the space of a couple months with their assistance.
+If in need of assistance, ask in `#community-service` in the [ASS discord](https://discord.gg/JqwXkyWF4m). Be prepared with your [snapshot](http://forums.kingdomofloathing.com/vb/showthread.php?t=218735), as it allows for better theorycrafting of a levelling plan or whatever else you may need help with. There are a lot of helpful pinned messages, such as a full-shiny ordering of scaling fights based on their caps or lists of easily accessible pizza ingredients. The folks there are very helpful - I went from an AFK farmer to creating my own CS script in the space of a couple months with their assistance.
 
 ## Doing a Run
 
