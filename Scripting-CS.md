@@ -8,8 +8,8 @@ Unfortunately, it's not easy to create a one-size-fits-all high-end CS solution 
 ## Creating a Run Plan
 
 A typical CS ascension consists of the following stages:
-- Doing coil wire, a 60-turn task that can't be accelerated.
-- Using the resulting reward to kick-start your stats, and levelling up as quickly as possible to help with the stat tests.
+- Using [borrowed time](https://kol.coldfront.net/thekolwiki/index.php/Borrowed_time) and doing coil wire, a 60-turn task that can't be accelerated.
+- Using the resulting reward to kick-start your stats, and levelling up as quickly as possible via (free) scaling fights to help with the stat tests.
 - Performing the stat tests, and then all others:
     - It's common to group hot resistance, noncombat and familiar weight together as they all benefit from having a heavy familiar - [exotic parrot](https://kol.coldfront.net/thekolwiki/index.php/Exotic_Parrot) helps with hot resistance, while [disgeist](https://kol.coldfront.net/thekolwiki/index.php/Disgeist_(familiar)) helps with noncombat. Plus if you do this early then you can use some of the familiar weight buffs during levelling.
     - A number of buffs are shared between weapon damage and spell damage.
@@ -29,5 +29,5 @@ Putting together a plan can feel nebulous, and it's a good idea to try it out in
 
 The end result will be a nice confidence boost as you perform your plan in action, get a run out of it, and obtain a very solid set of detailed notes to work with going forward. Now if you were to do the run again, the experience and notes will let you do so quicker. The first go through is the hardest, it gets easier once you're done with it.
 
-Another thing that's likely to happen is you'll look over your notes, ponder your plan, and notice certain things you could improve. My original plan assumed using [Map the Monsters](https://kol.coldfront.net/thekolwiki/index.php/Map_the_Monsters) in a zone where the skill does not work, so I had to alter my plans to work around that. I ended up altering the amount of familiar weight that was needed at that point in the run, which led me to change my [hatter buff](https://kol.coldfront.net/thekolwiki/index.php/The_Mad_Tea_Party) and the order in which I was using my familiars. This iterating process is likely to continue going forward - today I added switching my eudora to my post-run checks because I realised I forgot to do it.
+Another thing that's likely to happen is you'll look over your notes, ponder your plan, and notice certain things you could improve. My original plan assumed using [Map the Monsters](https://kol.coldfront.net/thekolwiki/index.php/Map_the_Monsters) in a zone where the skill does not work, so I had to alter my plans to work around that. I ended up altering the amount of familiar weight that was needed at that point in the run, which led me to change my [hatter buff](https://kol.coldfront.net/thekolwiki/index.php/The_Mad_Tea_Party) and the order in which I was using my familiars. This iterating process is likely to continue going forward, gradual improvements are good.
 
