@@ -24,9 +24,9 @@ CS scripts tend to be extraordinarily personal. Because the path rewards owning 
 
 | creator | link | runtime | turns | workshed | garden |
 |---------|------|---------|-------|----------|--------|
-| [Manendra (#1483803)](https://www.cheesellc.com/kol/profile.php?u=manendra) | [here](https://github.com/lewismd13/manny-hccs) | 5-6 minutes | 103-107 turns | DNA | peppermint |
+| [Manendra (#1483803)](https://www.cheesellc.com/kol/profile.php?u=manendra) | [here](https://github.com/lewismd13/manny-hccs) | 5-6 minutes | 109-110 turns | asdon | peppermint |
 
-**manny-hccs** uses more daily resources than phccs in exchange for higher results. It is noteable for its execution speed, consistency, and use of the geneticist lab over the asdon in its workshed. It is written in typescript, but was originally forked from an ash version of bean-hccs, making it look quite different from its forebearer.
+**manny-hccs** has recently undergone a radical overhaul, combining Libram's new CS support with elements of the restructured bean-hccs, phccs, and the original manny-hccs. It uses Asdon in the workshed, and features a resource-tracking log originally written by worthawholebean. In theory it should eventually support DNA lab, as well as Sauceror and/or Seal Clubber classes.
 
 ## bb-hccs
 
