@@ -87,23 +87,23 @@ Problems arise when you want to code up more complex scenarios. For example, you
 
 ## Putting It Together in Javascript
 
-Buffing and combat are the two main building blocks of CS, and now that there are approaches to handling both, you can start thinking about automating a longer stretch of a run. When writing KoL code, it's recommended to do so in Javascript as it's an actual language. You can google some of the problems you encounter with syntax and find solutions. However, Javascript is a relatively recent development in Mafia, and its [wiki](https://wiki.kolmafia.us/index.php/Main_Page) is aimed at ASH. It's not hard to convert the function names to their JS equivalents - ASH's `cli_execute()` becomes `cliExecute()` in JS. Additionally, when using JS, you need to actually import the Mafia functions you want to use, but that's a standard procedure. Revisiting the buffing example from earlier:
+Buffing and combat are the two main building blocks of CS, and now that there are approaches to handling both, you can start thinking about automating a longer stretch of a run. When writing KoL code, it's recommended to do so in Javascript as it's an actual language. You can google some of the problems you encounter with syntax and find solutions. However, Javascript is a relatively recent development in Mafia, and its [wiki](https://wiki.kolmafia.us/index.php/Main_Page) is aimed at ASH. It's not hard to convert the function names to their JS equivalents going from snake case to camel case - for example, ASH's `cli_execute()` becomes `cliExecute()` in JS. Revisiting the buffing bit from earlier:
 
 ```javascript
 const { cliExecute } = require("kolmafia")
 
-cliExecute(daycare mysticality);
-cliExecute(monorail buff);
-cliExecute(telescope look high);
-cliExecute(cast 1 Feel Excitement);
-cliExecute(cast 1 Song of Bravado);
-cliExecute(use 1 glittery mascara);
-cliExecute(cast 1 Get Big);
-cliExecute(use 1 votive of confidence);
-cliExecute(spacegate vaccine 2);
-cliExecute(crossstreams);
-cliExecute(use 1 ointment of the occult);
-cliExecute(cast 1 Stevedave's Shanty of Superiority);
+cliExecute("daycare mysticality");
+cliExecute("monorail buff");
+cliExecute("telescope look high");
+cliExecute("cast 1 Feel Excitement");
+cliExecute("cast 1 Song of Bravado");
+cliExecute("use 1 glittery mascara");
+cliExecute("cast 1 Get Big");
+cliExecute("use 1 votive of confidence");
+cliExecute("spacegate vaccine 2");
+cliExecute("crossstreams");
+cliExecute("use 1 ointment of the occult");
+cliExecute("cast 1 Stevedave's Shanty of Superiority");
 ```
 
 This imports the required function, and then performs the same series of CLI executions that were set up previously. However, you can put this in a `.js` file and call it from the client. You can begin experimenting with using other Mafia functions. For example, you can set your auto-attack to a macro from earlier and go do a fight in the Neverending Party:
