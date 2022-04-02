@@ -21,13 +21,50 @@ The non-stat tests are pretty much just a checklist. Captain Scotch created a [v
 
 Another aspect of planning a run are softcore pulls. These can be used to cut turns from tests, or compensate for lacking certain IotM. For example, it's common to pull [borrowed time](https://kol.coldfront.net/thekolwiki/index.php/Borrowed_time) to help with generating turns for coil wire if not in possession of [Clip Art](https://kol.coldfront.net/thekolwiki/index.php/Summon_Clip_Art).
 
-If in need of assistance, ask in `#community-service` in the [ASS discord](https://discord.gg/JqwXkyWF4m). Be prepared with your [snapshot](http://forums.kingdomofloathing.com/vb/showthread.php?t=218735), as it allows for better theorycrafting of a levelling plan or whatever else you may need help with. There are a lot of helpful pinned messages, such as a full-shiny ordering of scaling fights based on their caps or lists of easily accessible pizza ingredients. The folks there are very helpful - I went from an AFK farmer to creating my own CS script in the space of a couple months with their assistance.
+If in need of assistance, ask in `#community-service` in the [ASS discord](https://discord.gg/JqwXkyWF4m). Be prepared with your [snapshot](http://forums.kingdomofloathing.com/vb/showthread.php?t=218735), as it allows for better theorycrafting of a levelling plan or whatever else you may need help with. There are a lot of helpful pinned messages, such as a full-shiny ordering of scaling fights based on their caps or lists of easily accessible pizza ingredients. The folks there are very helpful - I went from an inattentive AFK farmer to creating my own CS script in the space of a couple months with their assistance.
 
 ## Doing a Run
 
-Putting together a plan can feel nebulous, and it's a good idea to try it out in practice once it takes a bit of shape. Do whatever pre-run preparations your plan assumes, hop the gash, and try to carry things out. While you're doing so, take excruciatingly detailed notes for every single fight you do. Write down buffs you cast, take screenshots of outfits you've put on. Once you clear the stat test hurdle then you can relax a bit with the note-taking as the scotch sheet has you covered for the tests. If anything, you may find yourself missing some of the buffs you had planned! In that event, use mafia's `modtrace` to compare against the sheet. Something as basic as counting how many modifiers you have in each can help you determine how many you're missing, and then you can go fishing for what you forgot.
+Putting together a plan can feel nebulous, and it's a good idea to try it out in practice once it takes a bit of shape. Do whatever pre-run preparations your plan assumes, hop the gash, and try to carry things out. While you're doing so, take excruciatingly detailed notes for every single fight you do. Write down buffs you cast, take screenshots of outfits you've put on. Once you clear the stat test hurdle then you can relax a bit with the note-taking as the Scotch sheet has you covered for the tests. If anything, you may find yourself missing some of the buffs you had planned! In that event, use mafia's `modtrace` to compare against the sheet. Something as basic as counting how many modifiers you have in each can help you determine how many you're missing, and then you can go fishing for what you forgot.
 
 The end result will be a nice confidence boost as you perform your plan in action, get a run out of it, and obtain a very solid set of detailed notes to work with going forward. Now if you were to do the run again, the experience and notes will let you do so quicker. The first go through is the hardest, it gets easier once you're done with it.
 
-Another thing that's likely to happen is you'll look over your notes, ponder your plan, and notice certain things you could improve. My original plan assumed using [Map the Monsters](https://kol.coldfront.net/thekolwiki/index.php/Map_the_Monsters) in a zone where the skill does not work, so I had to alter my plans to work around that. I ended up altering the amount of familiar weight that was needed at that point in the run, which led me to change my [hatter buff](https://kol.coldfront.net/thekolwiki/index.php/The_Mad_Tea_Party) and the order in which I was using my familiars. This iterating process is likely to continue going forward, gradual improvements are good.
+Another thing that's likely to happen is you'll look over your notes, ponder your plan, and notice certain things you could improve. My original plan assumed using [Map the Monsters](https://kol.coldfront.net/thekolwiki/index.php/Map_the_Monsters) in a zone where the skill does not work, so I had to alter my plans to work around that. I ended up altering the amount of familiar weight that was needed at that point in the run, which led me to change my [hatter buff](https://kol.coldfront.net/thekolwiki/index.php/The_Mad_Tea_Party) and the order in which I was using my familiars. This iterating process is likely to continue going forward. For example, I recently realised that I can sometimes skip summoning a Chubby and Plump bar for my Synthesis plan, if I happen upon an early lavender candy heart.
+
+## Initial Automation
+
+Now that you're armed with an exhaustive set of notes that let you perform your desired CS run, you can continue performing those runs with reduced effort by following your steps. However, this does leave room for human error (seeing how transferring a Scotch sheet to in-game buffs can already be challenging), and sounds rather mundane. Thankfully, scripting is perfect for this sort of thing, and the notes are the perfect foundation to use for it.
+
+Let's consider an example scenario. You are a Pastamancer, you just did coil wire, and you're buffing up your Mysticality to go beat up various free fights. Your notes feature the following list of effects that you acquired to help you with this task:
+- [Uncucumbered](https://kol.coldfront.net/thekolwiki/index.php/Uncucumbered)
+- [Favored by Lyle](https://kol.coldfront.net/thekolwiki/index.php/Favored_by_Lyle)
+- [Starry-Eyed](https://kol.coldfront.net/thekolwiki/index.php/Starry-Eyed)
+- [Feeling Excited](https://kol.coldfront.net/thekolwiki/index.php/Feeling_Excited)
+- [Song of Bravado](https://kol.coldfront.net/thekolwiki/index.php/Song_of_Bravado_(effect))
+- [Glittering Eyelashes](https://kol.coldfront.net/thekolwiki/index.php/Glittering_Eyelashes)
+- [Big](https://kol.coldfront.net/thekolwiki/index.php/Big_(effect))
+- [Confidence of the Votive](https://kol.coldfront.net/thekolwiki/index.php/Confidence_of_the_Votive)
+- [Broad-Spectrum Vaccine](https://kol.coldfront.net/thekolwiki/index.php/Broad-Spectrum_Vaccine)
+- [Total Protonic Reversal](https://kol.coldfront.net/thekolwiki/index.php/Total_Protonic_Reversal)
+- [Mystically Oiled](https://kol.coldfront.net/thekolwiki/index.php/Mystically_Oiled)
+- [Stevedave's Shanty of Superiority](https://kol.coldfront.net/thekolwiki/index.php/Stevedave%27s_Shanty_of_Superiority_(effect))
+
+Now that you are armed in this list of buffs, you can go and retrieve them one by one, visiting the appropriate locations, casting the appropriate skills. But all of them can be acquired via mafia's CLI, which you're likely familiar with. So for example you can get Feeling Excited by writing `cast 1 Feel Excitement` into the CLI, similar to what you could do in chat. Seeking out the equivalent to all of the effects above yields the following list of calls:
+
+```
+daycare mysticality;
+monorail buff;
+telescope look high;
+cast 1 Feel Excitement;
+cast 1 Song of Bravado;
+use 1 glittery mascara;
+cast 1 Get Big;
+use 1 votive of confidence;
+spacegate vaccine 2;
+crossstreams;
+use 1 ointment of the occult;
+cast 1 Stevedave's Shanty of Superiority;
+```
+
+You can take the text above and paste it into the CLI and it will acquire the effects for you. This reduces the chance you'll miss anything. You could do a CS run in this fashion - have a list of CLI calls to paste in, then do combats manually, and hit up the tests once prepared. Rather than needing to follow the notes to a dot, you now copy-paste things into the CLI. Things are already getting somewhat automatic, and they can get even more automatic if you want! Next stop - combat.
 
