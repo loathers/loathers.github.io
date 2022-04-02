@@ -132,7 +132,7 @@ Setting up an environment from scratch for this to work in is honestly a little 
 
 ## Exploring Established Scripts
 
-You should now be familiar enough with TS to be able to look at the various existing CS scripts and get a general idea of what they're doing. It's also possible to largely forego this entire write-up, just take one of those scripts and run with it, but there's a chance it's going to explode somewhere along the way due to its bespoke nature. And then you're stranded mid run, not sure what to do to pick things up and get them going again. The less you know about everything mentioned up to now, the more uncomfortable you'll be when this happens.
+You should now be familiar enough with the subject matter to be able to look at the various existing CS scripts and get a general idea of what they're doing. It's also possible to largely forego this entire write-up, just take one of those scripts and run with it, but there's a chance it's going to explode somewhere along the way due to its bespoke nature. And then you're stranded mid run, not sure what to do to pick things up and get them going again. The less you know about everything mentioned up to now, the more uncomfortable you'll be when this happens.
 
 However, there's no point forcing down open doors, and it's often very useful to look at existing scripts to find inspiration for solutions to common problems. The three originator scripts are [bean-hccs](https://github.com/phulin/bean-hccs), [phccs](https://github.com/horrible-little-slime/phccs) and [seventy-hccs](https://github.com/s-k-z/seventy-hccs), with a wave of following off-shoots making active use of the code base of the originators. For example, when I was making my script, I used Bean's test ordering, Phred's outfit logic and Katarn's fight ordering, along with bits of utility syntax from everyone mentioned. The existing scripts taught me about routing and cool programming solutions to problems I didn't even know I had.
 
@@ -144,7 +144,7 @@ In the event of wanting to build your own CS TS thing, it makes sense to start f
 - Regular combat, accepting a location and a macro to perform
 - Special case combat:
     - Mapping a given monster
-    - Saber force
+    - Saber force; account for various tracked properties that would have gotten changed in combat by setting them appropriately later
     - God Lobster
 - Familiar selection function, going down a checklist of things to acquire from familiars, accepting an argument specifying whether the familiar is allowed to attack to avoid surprises with free kill uses
 - Buffing function, accepting the desired effect(s) and getting them
