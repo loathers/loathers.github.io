@@ -140,16 +140,18 @@ In general, it's probably best to start from the top of a script and slowly work
 
 ## Crafting Utility Functions
 
-In the event of wanting to build your own CS TS thing, it makes sense to start from some common utility functions that will keep being used in your code. While it's fine to add the choice handling thing after every single Saber force you do, it's tidier to have one chunk of code that you then just run with a given set of values to perform the force in a particular way in a particular location. The following are worth figuring out:
+In the event of wanting to build your own CS TS thing, it makes sense to start from some common utility functions that will keep being used in your code. For example, while it's fine to add the choice handling thing after every single Saber force you do, it's tidier to have one chunk of code that you then just run with a given set of values to perform the force in a particular way in a particular location. The following are worth figuring out:
 - Regular combat, accepting a location and a macro to perform
 - Special case combat:
     - Mapping a given monster
-    - Saber force; account for various tracked properties that would have gotten changed in combat by setting them appropriately later
+    - Saber force
     - God Lobster
-- Familiar selection function, going down a checklist of things to acquire from familiars, accepting an argument specifying whether the familiar is allowed to attack to avoid surprises with free kill uses
-- Buffing function, accepting the desired effect(s) and getting them
+- Familiar selection function, going down a checklist of things to acquire from familiars; it's worth accepting an argument specifying whether the familiar is allowed to attack to avoid surprises with free kill uses
+- Buffing function, accepting the desired effects
 - Some sort of outfit logic, be it maximiser use, Phred-like or whatever else
-- Some sort of plan for Synthesis; can recommend storing solutions inside `_`-starting preferences for convenience
+- Some sort of plan for Synthesis
+
+As usual with the Saber, its wonkiness means that any sort of preference-trackable stuff that gets changed in combat won't actually get picked up by Mafia. The combat page never gets to load, so Mafia can't see the things happening. You'll need to manually adjust any affected preferences after the fight. From experience, if going for a simultaneous Synthesis decision, I'd recommend storing the candies to use in `_`-starting preferences named after your script. The fact they're `_`-starting means Mafia will delete them after rollover, and storing them as preferences is good for retaining the plan in the event of a script crash.
 
 The good news is none of this is CS-specific, and can be tested in aftercore at your leisure. As mentioned, there are plenty of solutions to these issues out there already, and you can take one and run with it. However, I'd recommend becoming somewhat acquainted with what it's doing and why, making it easier to fix any issues that may be encountered at a later time. In my case that meant writing simpler takes on existing concepts like Phred's outfit handling, so that if something were to go wrong I'd understand exactly where and why.
 
