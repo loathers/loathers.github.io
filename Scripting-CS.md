@@ -106,7 +106,7 @@ cliExecute("use 1 ointment of the occult");
 cliExecute("cast 1 Stevedave's Shanty of Superiority");
 ```
 
-This imports the required function, and then performs the same series of CLI executions that were set up previously. However, you can put this in a `.js` file and call it from the client. You can begin experimenting with using other Mafia functions. For example, you can set your auto-attack to a macro from earlier and go do a fight in the Neverending Party:
+This imports the required function, and then performs the same series of CLI executions that were set up previously. However, you can put this in a `.js` file and call it from the client. You can begin experimenting with using other Mafia functions. For example, you can set your auto-attack to a macro from earlier and go do a fight via `adv1()` (recommended for automation as it goes and does a single encounter in the specified zone) in the Neverending Party:
 
 ```javascript
 const { adv1, Location, setAutoAttack } = require("kolmafia")
@@ -115,7 +115,20 @@ setAutoAttack("CS_kill");
 adv1(Location.get("The Neverending Party"));
 ```
 
+You can test putative syntax in Mafia by pasting in your line prefaced with `js`. So for example you could technically call `js cliExecute("crossstreams");`, even if that's just telling Javascript to call a CLI command... with the JS line called from the CLI. But it's good for checking if your syntax is operational, and checking just about every written line is honestly not a bad idea.
+
 At this point, it should become possible to string together longer sequences of preparation, involving buffing, fights and gear. Another commonly used function will be `visitUrl()`, as some things like [voting](https://kol.coldfront.net/thekolwiki/index.php/Voting_Booth) require hitting a series of URLs and are not natively supported in automation by Mafia. The Saber is wonky, set the `choiceAdventure1387` property to whatever outcome you want (likely 3 for items) and add `if (handlingChoice()) runChoice(-1);` after the combat to sort out the choice adventure. In theory, you could go from start to end of a run now! However, if you feel like it, there's an option which will make your scripting life more convenient.
 
 ## Libram
+
+Libram is an ASS project that adds a number of utility functions, making certain things a lot easier and more controlled:
+- Combat handling is phenomenal. Prior to a fight, you can build a macro based on all sorts of in-Mafia information, yielding a native KoL macro that you can set as an auto-attack or pass to combat in other ways. No more interfacing between script and combat!
+- Dedicated CS test handling. Run a provided function as preparation, and then go check if you're buffed up enough to clear the test in your provided turn count. Great for catching weird things going wrong and making it possible to fix them on the fly in run. It even prints out a neat little log with predictions vs. reality and run time at the end!
+- Loads of convenient helper functionality. For example, `have()` is a ridiculously convenient function that is a one-stop shop for checking if you have something, be it an effect, item, whatever. And then there are things like picking a [Witchess](https://kol.coldfront.net/thekolwiki/index.php/Play_against_the_Witchess_Pieces) monster to fight (surprisingly fussy to do otherwise), economically fuelling up your [Asdon Martin](https://kol.coldfront.net/thekolwiki/index.php/Asdon_Martin), or listing today's holiday wanderers. Plenty of useful stuff!
+
+Libram's main downside is that it's in Typescript, which requires some dedicated installation and subsequent code compilation. However, ASS offers a [demo repository](https://github.com/docrostov/kol-ts-starter) that aims to get you acquainted with the process. Once you install Yarn, it becomes a case of calling `yarn run build` whenever you want to get a new version of the script in a form Mafia can run. TS is also closely related to JS, so your expertise from the previous step 
+
+Setting up an environment from scratch for this to work in is honestly a little daunting. There's nothing wrong with making a fork of the demo repository, cloning that, and following up the `yarn install` with a `yarn upgrade libram@latest kolmafia@latest eslint-plugin-libram@latest`. This installs the newest versions of Libram and Mafia, and nets you a functional TS setup to mess around in. That's what I did for DC6S.
+
+## Exploring Established Scripts
 
