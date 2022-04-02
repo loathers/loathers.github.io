@@ -136,3 +136,69 @@ You should now be familiar enough with TS to be able to look at the various exis
 
 However, there's no point forcing down open doors, and it's often very useful to look at existing scripts to find inspiration for solutions to common problems. The three originator scripts are [bean-hccs](https://github.com/phulin/bean-hccs), [phccs](https://github.com/horrible-little-slime/phccs) and [seventy-hccs](https://github.com/s-k-z/seventy-hccs), with a wave of following off-shoots making active use of the code base of the originators. For example, when I was making DC6S, I used Bean's test ordering, Phred's outfit logic and Katarn's fight ordering, along with bits of utility syntax from everyone mentioned. The existing scripts taught me about routing and cool programming solutions to problems I didn't even know I had.
 
+In general, it's probably best to start from the top of a script and slowly work your way down. Look for an `index.ts` or `main.ts` in the script files, that's likely the starting point. Take a look what files it imports functions from, the big ticket ones like levelling or test prep or whatever interests you. Go look at those. If you encounter something there that seems worth exploring, go look at the source code for the utility function that interests you. This is likely to be spread out across a number of files, but self-contained within the script's repository.
+
+## Crafting Utility Functions
+
+In the event of wanting to build your own CS TS thing, it makes sense to start from some common utility functions that will keep being used in your code. While it's fine to add the choice handling thing after every single Saber force you do, it's tidier to have one chunk of code that you then just run with a given set of values to perform the force in a particular way in a particular location. The following are worth figuring out:
+- Regular combat, accepting a location and a macro to perform
+- Special case combat:
+    - Mapping a given monster
+    - Saber force
+    - God Lobster
+- Familiar selection function, going down a checklist of things to acquire from familiars, accepting an argument specifying whether the familiar is allowed to attack to avoid surprises with free kill uses
+- Buffing function, accepting the desired effect(s) and getting them
+- Some sort of outfit logic, be it maximiser use, Phred-like or whatever else
+- Some sort of plan for Synthesis; can recommend storing solutions inside `_`-starting preferences for convenience
+
+The good news is none of this is CS-specific, and can be tested in aftercore at your leisure. As mentioned, there are plenty of solutions to these issues out there already, and you can take one and run with it. However, I'd recommend becoming somewhat acquainted with what it's doing and why, making it easier to fix any issues that may be encountered at a later time. In my case that meant writing simpler takes on existing concepts like Phred's outfit handling, so that if something were to go wrong I'd understand exactly where and why.
+
+Once those building blocks are in place, a lot of the meat of the script will be quite easy to accomplish. Some things like various run start collecting will require their own set of calls, but there's even less point to trying to be inventive here and mirroring existing script solutions should work fine. Once there's syntax in place that gets you prepped for all the tests accordingly, then you can start messing around with making your script re-entrant.
+
+## Making Your Code Re-Entrant
+
+Sometimes things fry. Recently I was about to do the non-combat test but the script aborted out, as for some reason my cop dollars didn't get counted correctly and I couldn't get a [shoe gum](https://kol.coldfront.net/thekolwiki/index.php/Shoe_gum). But once I sorted that out, I was able to re-run my script and it picked up right where the crash happened and finished the run for me. Being re-entrant is also good in the event of trying to change things around. When adding softcore support, I remembered most things... apart from stopping getting one errant [Ghost of Crimbo Carols](https://kol.coldfront.net/thekolwiki/index.php/Ghost_of_Crimbo_Carols) buff that triggered a knock-on cascade of failures. But my script was able to pick up and crawl on when asked to do so.
+
+Making code re-entrant involves asking yourself what any given chunk is trying to accomplish, and then checking if it's done. This can be the presence of an item, an effect, the number of turns spent in a zone. Essentially slapping a whole bunch of `if`s and `while`s into the script. Let's revisit the buffing from earlier in the write-up, now armed with Libram and the desire to make re-entrant code:
+
+```typescript
+import { cliExecute, Effect } from "kolmafia";
+import { have } from "libram";
+
+// Get a provided list of buffs
+export function getBuffs(buffs: Effect[]): void {
+    for (const buff of buffs) {
+        // If the buff is not there, get it
+        // the .default thing is a CLI-compatible way to do so
+        if (!have(buff)) {
+            cliExecute(buff.default);
+        }
+    }
+}
+```
+
+Most effects in Mafia have a `.default` property that contains the CLI way to summon said effect, so we can use that to acquire said effect. However, we're only doing so if we don't already have the effect present. This way, if something goes haywire a bit further down the script and we need to re-run things, the script can go get the buffs, realise it already has them, and not waste resources needlessly reapplying them.
+
+An example use of the buffing function, for the earlier list of effects:
+
+```typescript
+// +myst stuff! Quite a lot of it!
+getBuffs([
+    $effect`Uncucumbered`,
+    $effect`Favored by Lyle`,
+    $effect`Starry-Eyed`,
+    $effect`Feeling Excited`,
+    $effect`Song of Bravado`,
+    $effect`Glittering Eyelashes`,
+    $effect`Big`,
+    $effect`Confidence of the Votive`,
+    $effect`Broad-Spectrum Vaccine`,
+    $effect`Total Protonic Reversal`,
+    $effect`Mystically Oiled`,
+    $effect`Stevedave's Shanty of Superiority`,
+]);
+```
+
+## Conclusion
+
+It's not easy to sit down and start belting out competent CS TS code, especially if you're unfamiliar with anything from the KoL or programming side. However, taking it one step at a time and becoming acquainted with the task at hand and various existing solutions should get you to a point that you find desirable. This may be a list of CLI calls to paste in to set you up for your tests. This may be a fully fledged, re-entrant script inspired by existing TS scripts. The goal of scripting is to make things easier in the grand scheme of things, and finding a solution that works for you is what's important. The `#community-service` and `#mafia-and-scripting` channels should be able to help with any problems.
