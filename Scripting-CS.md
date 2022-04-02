@@ -70,7 +70,7 @@ You can take the text above and paste it into the CLI and it will acquire the ef
 
 ## Combat Macros
 
-There's a very good chance you've crossed paths with KoL's combat macros before. They're an incredible quality of life feature that helps at any level of play, and they're also very useful here. Just in case you're unfamiliar with them, the [documentation](http://forums.kingdomofloathing.com/vb/showthread.php?t=181641) provided on the forums is extremely helpful and easy to follow. Let's go back to the Pastamancer hitting up free fights to level up scenario, and let's assume you're abusing the [Saber](https://kol.coldfront.net/thekolwiki/index.php/Fourth_of_May_Cosplay_Saber) for combat (scaling fights scale their combat stats to Muscle/Moxie, but Saber hits like a train based on Mysticality, and the fight's stat gain is also Mysticality based). You go into combat, do some staggers and value stuff, and then apply the Saber for an easy win. Putting it all together looks like so:
+There's a very good chance you've crossed paths with KoL's combat macros before. They're an incredible quality of life feature that helps at any level of play, and they're also very useful here. Just in case you're unfamiliar with them, the [documentation](http://forums.kingdomofloathing.com/vb/showthread.php?t=181641) provided on the forums is extremely helpful and easy to follow. Let's go back to the Pastamancer hitting up free fights to level up scenario, and let's assume you're abusing the Saber for combat (scaling fights scale their combat stats to Muscle/Moxie, but Saber hits like a train based on Mysticality, and the fight's stat gain is also Mysticality based). You go into combat, do some staggers and value stuff, and then apply the Saber for an easy win. Putting it all together looks like so:
 
 ```
 skill Micrometeorite
@@ -84,3 +84,38 @@ You can then save this as `CS_kill` or whatever other name you fancy, and then y
 Problems arise when you want to code up more complex scenarios. For example, you decide to pursue [Tomes of Opportunity](https://kol.coldfront.net/thekolwiki/index.php/Tomes_of_Opportunity) and burn various free banishes/runaways in the Neverending Party. However, just as you're running out of said runaways, you want to [Bowl Sideways](https://kol.coldfront.net/thekolwiki/index.php/Bowl_Sideways) to get extra stats from the monsters you do end up fighting. While you can know from within Mafia when the relevant fight comes up, the KoL macro does not have access to that information. This leaves two main options, and the way to go depends on whether you prefer compactness or clarity:
 - Create multiple macros for multiple situations, and set them to auto-attack when they're needed. This can result in partially redundant macros performing similar tasks, and potentially increases the number of macros you need to modify in the event of wanting to implement a change.
 - The macros can check for certain things, namely the presence/absence of effects, skills and combat items. That means you can use the presence/absence of easily acquired items/effects to drive the macro's behaviour. [Timers](https://kol.coldfront.net/thekolwiki/index.php/Timers) are freely castable/shruggable, while [hair spray](https://kol.coldfront.net/thekolwiki/index.php/Hair_spray) and [seal tooth](https://kol.coldfront.net/thekolwiki/index.php/Seal_tooth) are easy to get in run and can be ushered between your inventory and closet as required. This can result in code that's harder to interpret once enough time has passed for you to forget the exact details, so be sure to mention what you're doing in comments both in the macro and your script.
+
+## Putting It Together in Javascript
+
+Buffing and combat are the two main building blocks of CS, and now that there are approaches to handling both, you can start thinking about automating a longer stretch of a run. When writing KoL code, it's recommended to do so in Javascript as it's an actual language. You can google some of the problems you encounter with syntax and find solutions. However, Javascript is a relatively recent development in Mafia, and its [wiki](https://wiki.kolmafia.us/index.php/Main_Page) is aimed at ASH. It's not hard to convert the function names to their JS equivalents - ASH's `cli_execute()` becomes `cliExecute()` in JS. Additionally, when using JS, you need to actually import the Mafia functions you want to use, but that's a standard procedure. Revisiting the buffing example from earlier:
+
+```javascript
+const { cliExecute } = require("kolmafia")
+
+cliExecute(daycare mysticality);
+cliExecute(monorail buff);
+cliExecute(telescope look high);
+cliExecute(cast 1 Feel Excitement);
+cliExecute(cast 1 Song of Bravado);
+cliExecute(use 1 glittery mascara);
+cliExecute(cast 1 Get Big);
+cliExecute(use 1 votive of confidence);
+cliExecute(spacegate vaccine 2);
+cliExecute(crossstreams);
+cliExecute(use 1 ointment of the occult);
+cliExecute(cast 1 Stevedave's Shanty of Superiority);
+```
+
+This imports the required function, and then performs the same series of CLI executions that were set up previously. However, you can put this in a `.js` file and call it from the client. You can begin experimenting with using other Mafia functions. For example, you can set your auto-attack to a macro from earlier and go do a fight in the Neverending Party:
+
+```javascript
+const { adv1, Location, setAutoAttack } = require("kolmafia")
+
+setAutoAttack("CS_kill");
+adv1(Location.get("The Neverending Party"));
+```
+
+At this point, it should become possible to string together longer sequences of preparation, involving buffing, fights and gear. Another commonly used function will be `visitUrl()`, as some things like [voting](https://kol.coldfront.net/thekolwiki/index.php/Voting_Booth) require hitting a series of URLs and are not natively supported in automation by Mafia. The Saber is wonky, set the `choiceAdventure1387` property to whatever outcome you want (likely 3 for items) and add `if (handlingChoice()) runChoice(-1);` after the combat to sort out the choice adventure. In theory, you could go from start to end of a run now! However, if you feel like it, there's an option which will make your scripting life more convenient.
+
+## Libram
+
