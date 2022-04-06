@@ -32,6 +32,8 @@ navbarData:
     sublinks:
       - title: Community Service Scripts
         url: CS-Scripting-Resources.html
+  - title: How to Script CS
+    url: Scripting-CS.html
 
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
