@@ -32,6 +32,8 @@ navbarData:
     sublinks:
       - title: Community Service Scripts
         url: CS-Scripting-Resources.html
+      - title: Awesome KoL Scripts
+        url: Awesome-Scripts.html
   - title: How to Script CS
     url: Scripting-CS.html
 
