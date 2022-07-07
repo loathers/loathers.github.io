@@ -11,12 +11,12 @@ If you would like to submit a script to be placed on this page, please post in t
 
 ## Automation (Ascension)
 
-### LoopCasual
+### autoscend
 | owner | link | usage |
 |---------|------|---------|
-| Kasekopf (#1210810) | [LoopCasual GitHub](https://github.com/Kasekopf/loop-casual) | Compile the script's JS file, import into your scripts folder, then run the script in the GCLI |
+| [L. A. S. S.](https://github.com/Loathing-Associates-Scripting-Society) | [autoscend GitHub](https://github.com/Loathing-Associates-Scripting-Society/autoscend) | Run the script in the GCLI |
 
-**LoopCasual** aims to complete a casual ascension in one day. It tries to use as few turns as possible to accomplish this, allowing someone to use one of the farming scripts below to use the rest of a character's turns. At a high level, this will power your character up to level 13 and complete quests using a relatively customized quest engine. It was originally built by Kasekopf to work very specifically for Kasekopf's account; it is more flexible than it used to be, but we would recommend having patience and being ready to work with account-specific bugs as you work your account into a place where LoopCasual works out-of-the-box. Kasekopf is an active member on the [ASS discord](https://discord.gg/8p7hh8BRSF); if you have questions regarding LoopCasual, please post issues on the GitHub or reach out in the **#mafia-and-scripting** channel. Please note as well that **LoopCasual requires compiling JavaScript from TypeScript**. For more on how to do that, please visit our [KOL TS Starter repository](https://github.com/docrostov/kol-ts-starter).
+**autoscend** is one of the crowning achievements of the Loathing Associates Scripting Society. In a nutshell, autoscend is a script that will play through an entire ascension for you in KoL. The guiding philosophy of autoscend is that while it may not get you through an ascension as efficiently as humanly possible, it will brute force the ascension using as many resources as it can reasonably use, and it will finish (most) paths within 3-4 days. Given the complexity of KOL, this is pretty impressive! In a few recent paths, autoscend has actually been good enough and efficient enough at resource usage to get a few players bronze buttons, which gives you a view into how effective the autoscend team has been in working on the script. If you have questions regarding autoscend, please post issues on the GitHub or reach out in the **#autoscend** channel within the [ASS discord](https://discord.gg/8p7hh8BRSF).
 
 ## Automation (Farming)
 
@@ -59,6 +59,13 @@ If you would like to submit a script to be placed on this page, please post in t
 
 ## Informational
 
+### Snapshot Maker (cc_snapshot)
+| owner | link | usage |
+|---------|------|---------|
+| CheeseCookie (#) | [cc_snapshot on the KoL Forums](http://forums.kingdomofloathing.com/vb/showthread.php?t=218735) | Run the script in the GCLI |
+
+**Snapshot Maker** (more commonly known as **cc_snapshot**) is a script that populates a public, shareable webpage you can use to show people what you own in KoL. This page will display every IOTM that is bound to your account, what skills you have permed, what your character has consumed, what tattoos your character has unlocked, and whether or not you own a variety of cool semi-relevant items from years prior. When other KOL players ask to see your snapshot (or talk about "greenboxen"), this is what they're talking about. One semi-important note -- Cheesecookie no longer plays KoL, so updates (while relatively consistent) are not frequently done until Cheese is bothered in the linked thread on the KoL forum. Also, the HTTPS certificate in the snapshots is semi-broken, so when looking at your own snapshot linked from the GCLI, we would recommend changing the linked URL to use HTTP instead of HTTPS so you don't get a dire-looking invalid certificate error. 
+
 ### KoLAccountVal
 | owner | link | usage |
 |---------|------|---------|
@@ -67,4 +74,32 @@ If you would like to submit a script to be placed on this page, please post in t
 **AccountVal** is a rewrite of a script by the wise and curious Soolar by the also-wise and ever-curious Irrat. It will analyze your inventory and report back on the value of everything you've got, and will do so slightly faster than the script it was re-written from, as it was written in JavaScript and has some limited caching support. It also has an option that only generates the value of your tradeable items; ergo, you can both revel in the riches you've bound to your account and get excited about the un-accumulated riches your tradeable items could give you.
 
 ## Relay (General Purpose)
+
+### TourGuide
+| owner | link | usage |
+|---------|------|---------|
+| [L. A. S. S.](https://github.com/Loathing-Associates-Scripting-Society) | [TourGuide GitHub](https://github.com/loathing-Associates-Scripting-Society/TourGuide) | After installing, select it from the topbar of the relay browser to run the assistant |
+
+**TourGuide** is, effectively, an advice script. It provides a large-scale summary of all available resources that you -could- be using in KoL, with things like lists of available free banishes, steps to complete active quests, tips on how to finish tasks in the fewest turns, and large bright reminders when you have a limited use resource up that you may want to go to a specific place to use. TourGuide is based on the script "Guide" by [Ezandora](https://github.com/Ezandora); while it is based on the bones of Guide, TourGuide has evolved into a vastly different fork of the original brainchild, with roughly two years of extra IOTMs covered and added to the script, along with several additional features. TourGuide developers acknowledge and appreciate Ezandora's work in creating the scaffolding behind TourGuide.
+
+### ChIT
+| owner | link | usage |
+|---------|------|---------|
+| Soolar (#2463557) | [ChIT GitHub](https://github.com/Loathing-Associates-Scripting-Society/ChIT) | Once installed, will show up automatically |
+
+**ChIT** is an upgraded character pane. It features a vastly customizable set of tiles that can be moved, twiddled, and re-sized to create a perfect view of what you need to know about your character. Many speed ascenders use it explicitly for the additional support it gives for quick equipment swaps, familiar management, easy buff shrugging & management, and highlighted timers that allow you to remind yourself of future actions you should do in future turns. It is under active development and generally supports IOTMs relatively soon after they are released; if you have ChIT installed and notice that new IOTMs are not supported, please check the GitHub to see if an update was pushed, and consider deleting/re-installing; due to the "always on" nature of ChIT vs other scripts, it is slightly more common for people to experience issues where ChIT does not properly update. Soolar is an active member on the [ASS discord](https://discord.gg/8p7hh8BRSF) and is actively developing ChIT; if you have questions, please post issues on the GitHub or reach out in the **#mafia-and-scripting** channel. 
+
 ## Relay (Supplemental UI for IOTMs)
+
+# Awesome KoL Scripts... that require Compiling
+
+Everything above this line is usable out-of-the-box. You can install the script and use it either from the GCLI or the relay browser without going through additional pre-installation steps. Below this line, everything listed requires a bit more effort; these projects are built in TypeScript, which requires compiling into a usable script that KoLMafia can read and use. You won't simply be able to run an "SVN install" command and just run the script. 
+
+For more on how to do compile and build these scripts, please cross-reference our [KOL TS Starter repository](https://github.com/docrostov/kol-ts-starter) with the readmes for the individual scripts. Our starter repository will walk you through the often lugubrious process of compiling and staging scripts such that your system can run them, while the readmes should give more guidance on things that may need changing for your specific situation.
+
+### LoopCasual
+| owner | link | usage |
+|---------|------|---------|
+| Kasekopf (#1210810) | [LoopCasual GitHub](https://github.com/Kasekopf/loop-casual) | Compile the script's JS file, import into your scripts folder, then run the script in the GCLI |
+
+**LoopCasual** aims to complete a casual ascension in one day. It tries to use as few turns as possible to accomplish this, allowing someone to use one of the farming scripts below to use the rest of a character's turns. At a high level, this will power your character up to level 13 and complete quests using a relatively customized quest engine. It was originally built by Kasekopf to work very specifically for Kasekopf's account; it is more flexible than it used to be, but we would recommend having patience and being ready to work with account-specific bugs as you work your account into a place where LoopCasual works for your account. Kasekopf is an active member on the [ASS discord](https://discord.gg/8p7hh8BRSF) and is actively developing LoopCasual; if you have questions regarding LoopCasual, please post issues on the GitHub or reach out in the **#mafia-and-scripting** channel. 
