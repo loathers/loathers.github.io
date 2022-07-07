@@ -4,8 +4,8 @@ This document contains a list of commonly used and (largely) regularly updated s
 
 - **Automation**: Scripts that allow you to automate pieces of KOL, usually for farming purposes.
 - **Organization**: Scripts that organize items and resources in specific ways
-- **Informational**: Scripts that can be used to give you information and summaries for your account
 - **Relay**: Scripts that create or modify pages in KoLMafia's relay browser, for added UI benefits and information
+- **Miscellaneous**: Scripts that do not fit the mold of the other 3 categories; these are usually informational in nature, or automate specific tasks in specific ways
 
 If you would like to submit a script to be placed on this page, please post in the **#mafia-and-scripting** channel in the [Ascension Speed Society discord](https://discord.gg/8p7hh8BRSF); tag Captain Scotch (whose Discord name is DocRostov#7004) to ensure it gets seen in a timely fashion.
 
@@ -57,22 +57,6 @@ If you would like to submit a script to be placed on this page, please post in t
 
 **Keeping Tabs** is a lower-user-effort version of Philter (discussed above), which uses the native KOL inventory tab system to organize your items and allow users to modify their desired tab behavior. Essentially, you as a user just need to make a number of custom-named tabs that reflect what you want to do to your items; running `keeping-tabs` will then do exactly what you told it to do, flushing your inventory out and emptying it in the way you outlined. There is no active support system for Keeping Tabs -- if you have questions, please post an [issue](https://github.com/pstalcup/keeping-tabs/issues) on the GitHub linked above and Rev will get to it on his own time. 
 
-## Informational
-
-### Snapshot Maker (cc_snapshot)
-| owner | link | usage |
-|---------|------|---------|
-| CheeseCookie (#) | [cc_snapshot on the KoL Forums](http://forums.kingdomofloathing.com/vb/showthread.php?t=218735) | Run the script in the GCLI |
-
-**Snapshot Maker** (more commonly known as **cc_snapshot**) is a script that populates a public, shareable webpage you can use to show people what you own in KoL. This page will display every IOTM that is bound to your account, what skills you have permed, what your character has consumed, what tattoos your character has unlocked, and whether or not you own a variety of cool semi-relevant items from years prior. When other KOL players ask to see your snapshot (or talk about "greenboxen"), this is what they're talking about. One semi-important note -- Cheesecookie no longer plays KoL, so updates (while relatively consistent) are not frequently done until Cheese is bothered in the linked thread on the KoL forum. Also, the HTTPS certificate in the snapshots is semi-broken, so when looking at your own snapshot linked from the GCLI, we would recommend changing the linked URL to use HTTP instead of HTTPS so you don't get a dire-looking invalid certificate error. 
-
-### KoLAccountVal
-| owner | link | usage |
-|---------|------|---------|
-| Irrat (#3469406) | [KolAccountVal GitHub](https://github.com/pstalcup/keeping-tabs) | Run the script in the GCLI |
-
-**AccountVal** is a rewrite of a script by the wise and curious Soolar by the also-wise and ever-curious Irrat. It will analyze your inventory and report back on the value of everything you've got, and will do so slightly faster than the script it was re-written from, as it was written in JavaScript and has some limited caching support. It also has an option that only generates the value of your tradeable items; ergo, you can both revel in the riches you've bound to your account and get excited about the un-accumulated riches your tradeable items could give you.
-
 ## Relay (General Purpose)
 
 ### TourGuide
@@ -90,6 +74,85 @@ If you would like to submit a script to be placed on this page, please post in t
 **ChIT** is an upgraded character pane. It features a vastly customizable set of tiles that can be moved, twiddled, and re-sized to create a perfect view of what you need to know about your character. Many speed ascenders use it explicitly for the additional support it gives for quick equipment swaps, familiar management, easy buff shrugging & management, and highlighted timers that allow you to remind yourself of future actions you should do in future turns. It is under active development and generally supports IOTMs relatively soon after they are released; if you have ChIT installed and notice that new IOTMs are not supported, please check the GitHub to see if an update was pushed, and consider deleting/re-installing; due to the "always on" nature of ChIT vs other scripts, it is slightly more common for people to experience issues where ChIT does not properly update. Soolar is an active member on the [ASS discord](https://discord.gg/8p7hh8BRSF) and is actively developing ChIT; if you have questions, please post issues on the GitHub or reach out in the **#mafia-and-scripting** channel. 
 
 ## Relay (Supplemental UI for IOTMs)
+
+### Briefcase
+| owner | link | usage |
+|---------|------|---------|
+| Ezandora (#1557284) | [Briefcase GitHub](https://github.com/Ezandora/Briefcase) | Shows up in the relay browser when you examine your KGB |
+
+**Briefcase** is a relay override that *dramatically* simplifies usage of the [Kremlin's Greatest Briefcase](https://kol.coldfront.net/thekolwiki/index.php/Kremlin%27s_Greatest_Briefcase) IOTM. The KGB is perhaps the most confusing and difficult-to-use IOTM ever released, requiring a user to play a devilishly complicated game of visual Mastermind to unlock the tabs, cycle the effects, and generate useful buffs. It took almost the entire month of the KGB's release for people to figure out how the hell the IOTM was supposed to be used. Ezandora's KGB override is completely necessary to actually use the IOTM in an ascension context; without it, you're effectively flying blind and spending 30-45 minutes solving a puzzle to try and figure out how the hell the IOTM can be used. This script is not actively updated or maintained, but has not required significant changes in years, so likely will still work very well for your purposes -- and, as noted, is *100% required* if you have any intention of using the KGB within an ascension context.
+
+### Pizza Cube GUI
+| owner | link | usage |
+|---------|------|---------|
+| Lacey Jones (#2993889) | [Pizza Cube GUI GitHub](https://github.com/ggvgiu/PizzaCubeGUI/) | Shows up in the relay browser when you click on your workshed with the Pizza Cube installed |
+
+**Pizza Cube GUI** is a relay override that improves the experience of baking diabolic pizzas in KoLMafia. The [Diabolic Pizza Cube](https://kol.coldfront.net/thekolwiki/index.php/Diabolic_pizza_cube) IOTM allows users to sacrifice four items into your pizza oven to generate a diabolic pizza. The items chosen give the pizza various effects and beneficial attributes to the user. This GUI features predictions of the effects pizza would generate with a given selection of items, suggestions for possible pizzas that could be helpful to you, various ways to filter and sort large inventories when trying to make your perfect pizza, and filters out effects that do not work in the pizza cube. Highly recommended if you plan on baking pizzas in your KOL career. Lacey is a semi-active user in the [ASS discord](https://discord.gg/8p7hh8BRSF); if you have questions, please post issues on the GitHub or reach out in the **#mafia-and-scripting** channel for our scripters to take a look. 
+
+### Genie
+| owner | link | usage |
+|---------|------|---------|
+| Ezandora (#1557284) | [Genie GitHub](https://github.com/Ezandora/Genie) | Shows up in the relay browser when you make a wish |
+
+**Genie** is a relay override that makes wishing using the [genie bottle](https://kol.coldfront.net/thekolwiki/index.php/Genie_bottle) in KoL considerably easier to do. The native UI for wishes (both pocket wishes and rubbing the Genie bottle) is frustratingly simplistic, requiring checking the wiki to figure out how to do even very basic activities; Ezandora's relay override fixes this issue by spawning a page that gives you a well-formatted list of possible options you can use for your wish. This script is not actively updated or maintained, but has not required significant changes in years, so likely will still work very well for your purposes.
+
+### Shorts UI
+| owner | link | usage |
+|---------|------|---------|
+| worthawholebean (#1972588) | [Shorts UI GitHub](https://github.com/phulin/shorts-ui/) | Shows up in the relay browser when you \[use\] your cargo cultist shorts |
+
+**Shorts UI** is a relay override that improves the experience of picking the pocket of your cargo shorts in KoLMafia. The [Cargo Cultist Shorts](https://kol.coldfront.net/thekolwiki/index.php/Cargo_Cultist_Shorts) IOTM allows users to pick the shorts pocket once a day; this gets you useful buffs, useful items, or free fights against useful monsters. As there are 666 pockets in the shorts, it can be very hard to remember what's what; this UI summarizes the most useful picks and lets you select them very quickly in an ascension, without having to reference the wiki or a spading sheet to figure out which pocket you'd need to pick for which effect. The script's creator, worthawholebean, is a moderator on the [ASS discord](https://discord.gg/8p7hh8BRSF); if you have questions, please post issues on the GitHub or reach out in the **#mafia-and-scripting** channel for us to take a look.
+
+### Locket UI
+| owner | link | usage |
+|---------|------|---------|
+| [L. A. S. S.](https://github.com/Loathing-Associates-Scripting-Society) | [Philter GitHub](https://github.com/Loathing-Associates-Scripting-Society/locket-ui/) | Click "reminisice" to activate the Locket UI page |
+
+**Locket UI** is a relay override that improves the experience of reminisicing using the [Combat Lover's Locket](https://kol.coldfront.net/thekolwiki/index.php/Combat_lover%27s_locket) IOTM. The native UI is just a drop down with every possible monster; this UI maintains that dropdown, but allows users to filter it to specific desired phylums, while also pulling out a variety of ascension-relevant picks into easy buttons that can be quickly activated during an ascension. This script is actively updated and maintained by LASS; for support, visit the [ASS discord](https://discord.gg/8p7hh8BRSF) and reach out in the **#mafia-and-scripting** channel for us to take a look.
+
+### Bastille
+| owner | link | usage |
+|---------|------|---------|
+| Ezandora (#1557284) | [Bastille GitHub](https://github.com/Ezandora/Bastille) | Shows up in the relay browser when you use the Bastille item |
+
+**Bastille** is a relay override that makes selecting your rewards for the [Bastille Battalion control rig](https://kol.coldfront.net/thekolwiki/index.php/Bastille_Battalion_control_rig) minigame much easier, and runs the minigame for you in order to save time during your ascensions. This script is not actively updated or maintained, but has not required significant changes in years, so likely will still work very well for your purposes.
+
+### Asdon Martin GUI
+| owner | link | usage |
+|---------|------|---------|
+| Ezandora (#1557284) | [Source Terminal GUI GitHub](https://github.com/Ezandora/Asdon-Martin-GUI) | Shows up in the relay browser when you click on your workshed with the Asdon Martin installed |
+
+**Asdon Martin GUI** is a relay override that simplifies usage of the [Asdon Martin](https://kol.coldfront.net/thekolwiki/index.php/Asdon_Martin) IOTM. The process of fueling and upkeep for an Asdon Martin is a little bit annoying; this GUI abstracts the annoying issue of fueling and toggling buffs by placing them all on the same page, and offering automated buttons that will do things like create soda bread to fuel your Asdon or fuel up to specific points. Unlike many of Ezandora's scripts, does require a more recent version of Mafia than the rest, as it has a few specific changes in how worksheds are used that require more recent mafia installs than most of her work. This script is not actively updated or maintained, but has not required significant changes in years, so likely will still work very well for your purposes.
+
+### Source Terminal GUI
+| owner | link | usage |
+|---------|------|---------|
+| Ezandora (#1557284) | [Source Terminal GUI GitHub](https://github.com/Ezandora/Source-Terminal-GUI) | Shows up in the relay browser when you click on your source terminal |
+
+**Source Terminal GUI** is a relay override that simplifies usage of the [Source Terminal](https://kol.coldfront.net/thekolwiki/index.php/Source_Terminal) IOTM. Natively, the terminal effectively acts as a unix-style terminal, ingesting commands like "dir, exit, help, ls, reset, status" and running enhance/enquiry/educate/extrude commands at the user's urging. It's a very cute piece of native UI, but can be a little annoying if you have to use it every single ascension; Ezandora's GUI takes the text-based terminal and turns it into a button-based GUI where you simply need to press easily labeled buttons to get the terminal to do what you want. This script is not actively updated or maintained, but has not required significant changes in years, so likely will still work very well for your purposes.
+
+## Miscellaneous
+
+### Snapshot Maker (cc_snapshot)
+| owner | link | usage |
+|---------|------|---------|
+| CheeseCookie (# N/A) | [cc_snapshot on the KoL Forums](http://forums.kingdomofloathing.com/vb/showthread.php?t=218735) | Run the script in the GCLI |
+
+**Snapshot Maker** (more commonly known as **cc_snapshot**) is a script that populates a public, shareable webpage you can use to show people what you own in KoL. This page will display every IOTM that is bound to your account, what skills you have permed, what your character has consumed, what tattoos your character has unlocked, and whether or not you own a variety of cool semi-relevant items from years prior. When other KOL players ask to see your snapshot (or talk about "greenboxen"), this is what they're talking about. One semi-important note -- Cheesecookie no longer plays KoL, so updates (while relatively consistent) are not frequently done until Cheese is bothered in the linked thread on the KoL forum. Also, the HTTPS certificate in the snapshots is semi-broken, so when looking at your own snapshot linked from the GCLI, we would recommend changing the linked URL to use HTTP instead of HTTPS so you don't get a dire-looking invalid certificate error. 
+
+### KoLAccountVal
+| owner | link | usage |
+|---------|------|---------|
+| Irrat (#3469406) | [KolAccountVal GitHub](https://github.com/pstalcup/keeping-tabs) | Run the script in the GCLI |
+
+**AccountVal** is a rewrite of a script by the wise and curious Soolar by the also-wise and ever-curious Irrat. It will analyze your inventory and report back on the value of everything you've got, and will do so slightly faster than the script it was re-written from, as it was written in JavaScript and has some limited caching support. It also has an option that only generates the value of your tradeable items; ergo, you can both revel in the riches you've bound to your account and get excited about the un-accumulated riches your tradeable items could give you.
+
+### Gain
+| owner | link | usage |
+|---------|------|---------|
+| Ezandora (#1557284) | [Gain GitHub](https://github.com/Ezandora/Gain) | Run the script in the GCLI |
+
+In a nutshell, **Gain** is an efficient buffing script. It will analyze pricing on various buff options and get the user to the cheapest possible configuration that achieves their goals. As the help file states, `gain 400 initiative` is a command that will figure out the most cost-efficient way to get your character to 400 initiative and get you there. This is most useful in the context of other scripts, but can be useful in limited scenarios within an ascension, for instance if you are trying to quickly complete an ascension and need to hit a specific threshold for a specific test. As with other scripts by Ezandora, Gain is not actively updated or maintained, but has not required significant changes in years, so likely will still work very well for your purposes. It relies on Mafia's background data when running its calculations, so it is likely it will still evaluate things that were released after the script's most recent update (in February 2021, as of this writing). 
 
 # Awesome KoL Scripts... that require Compiling
 
