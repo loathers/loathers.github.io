@@ -169,9 +169,9 @@ Bale is an old-time scripter who made a truly absurd number of helpful and power
 
 | owner | link | usage |
 |---------|------|---------|
-| Irrat (#3469406) | [Kol AccountVal GitHub]([https://github.com/pstalcup/keeping-tabs](https://github.com/libraryaddict/KolAccountVal/)) | Run the script in the GCLI |
+| Irrat (#3469406) | [Kol AccountVal GitHub](https://github.com/libraryaddict/KolAccountVal/) | Run the script in the GCLI |
 
-**AccountVal.js** is a rewrite of a script by the wise and curious Soolar by the also-wise and ever-curious Irrat. It will analyze your inventory and report back on the value of everything you've got, and will do so slightly faster than the script it was re-written from, as it was written in JavaScript and has some limited caching support. It also has an option that only generates the value of your tradeable items; ergo, you can both revel in the riches you've bound to your account and get excited about the un-accumulated riches your tradeable items could give you.
+**AccountVal.js** is a spiritual successor to an ASH script by the wise and curious Soolar, written in JavaScript by the also-wise and ever-curious Irrat. It will analyze your inventory and report back on the value of everything you've got. Unlike it's predecessor, this script will run faster on subsequent runs after the first run, as it has caching support for items it has already evaluated. It also has an option that only generates the value of your tradeable items; ergo, you can both revel in the riches you've bound to your account and get excited about the un-accumulated riches your tradeable items could give you.
 
 ### Gain
 
