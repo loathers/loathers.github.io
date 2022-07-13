@@ -127,7 +127,7 @@ Bale is an old-time scripter who made a truly absurd number of helpful and power
 
 | owner | link | usage |
 |---------|------|---------|
-| [L. A. S. S.](https://github.com/Loathing-Associates-Scripting-Society) | [Philter GitHub](https://github.com/Loathing-Associates-Scripting-Society/locket-ui/) | Click "reminisice" to activate the Locket UI page |
+| [L. A. S. S.](https://github.com/Loathing-Associates-Scripting-Society) | [LocketUI GitHub](https://github.com/Loathing-Associates-Scripting-Society/locket-ui/) | Click "reminisice" to activate the Locket UI page |
 
 **Locket UI** is a relay override that improves the experience of reminisicing using the [Combat Lover's Locket](https://kol.coldfront.net/thekolwiki/index.php/Combat_lover%27s_locket) IOTM. The native UI is just a drop down with every possible monster; this UI maintains that dropdown, but allows users to filter it to specific desired phylums, while also pulling out a variety of ascension-relevant picks into easy buttons that can be quickly activated during an ascension. This script is actively updated and maintained by LASS; for support, visit the [ASS discord](https://discord.gg/8p7hh8BRSF) and reach out in the **#mafia-and-scripting** channel for us to take a look.
 
@@ -143,7 +143,7 @@ Bale is an old-time scripter who made a truly absurd number of helpful and power
 
 | owner | link | usage |
 |---------|------|---------|
-| Ezandora (#1557284) | [Source Terminal GUI GitHub](https://github.com/Ezandora/Asdon-Martin-GUI) | Shows up in the relay browser when you click on your workshed with the Asdon Martin installed |
+| Ezandora (#1557284) | [Asdon GUI GitHub](https://github.com/Ezandora/Asdon-Martin-GUI) | Shows up in the relay browser when you click on your workshed with the Asdon Martin installed |
 
 **Asdon Martin GUI** is a relay override that simplifies usage of the [Asdon Martin](https://kol.coldfront.net/thekolwiki/index.php/Asdon_Martin) IOTM. The process of fueling and upkeep for an Asdon Martin is a little bit annoying; this GUI abstracts the annoying issue of fueling and toggling buffs by placing them all on the same page, and offering automated buttons that will do things like create soda bread to fuel your Asdon or fuel up to specific points. Unlike many of Ezandora's scripts, does require a more recent version of Mafia than the rest, as it has a few specific changes in how worksheds are used that require more recent mafia installs than most of her work. This script is not actively updated or maintained, but has not required significant changes in years, so likely will still work very well for your purposes.
 
@@ -165,13 +165,13 @@ Bale is an old-time scripter who made a truly absurd number of helpful and power
 
 **Snapshot Maker** (more commonly known as **cc_snapshot**) is a script that populates a public, shareable webpage you can use to show people what you own in KoL. This page will display every IOTM that is bound to your account, what skills you have permed, what your character has consumed, what tattoos your character has unlocked, and whether or not you own a variety of cool semi-relevant items from years prior. When other KOL players ask to see your snapshot (or talk about "greenboxen"), this is what they're talking about. One semi-important note -- Cheesecookie no longer plays KoL, so updates (while relatively consistent) are not frequently done until Cheese is bothered in the linked thread on the KoL forum. Also, the HTTPS certificate in the snapshots is semi-broken, so when looking at your own snapshot linked from the GCLI, we would recommend changing the linked URL to use HTTP instead of HTTPS so you don't get a dire-looking invalid certificate error. 
 
-### KoLAccountVal
+### KoL AccountVal.js
 
 | owner | link | usage |
 |---------|------|---------|
-| Irrat (#3469406) | [KolAccountVal GitHub](https://github.com/pstalcup/keeping-tabs) | Run the script in the GCLI |
+| Irrat (#3469406) | [Kol AccountVal GitHub]([https://github.com/pstalcup/keeping-tabs](https://github.com/libraryaddict/KolAccountVal/)) | Run the script in the GCLI |
 
-**AccountVal** is a rewrite of a script by the wise and curious Soolar by the also-wise and ever-curious Irrat. It will analyze your inventory and report back on the value of everything you've got, and will do so slightly faster than the script it was re-written from, as it was written in JavaScript and has some limited caching support. It also has an option that only generates the value of your tradeable items; ergo, you can both revel in the riches you've bound to your account and get excited about the un-accumulated riches your tradeable items could give you.
+**AccountVal.js** is a rewrite of a script by the wise and curious Soolar by the also-wise and ever-curious Irrat. It will analyze your inventory and report back on the value of everything you've got, and will do so slightly faster than the script it was re-written from, as it was written in JavaScript and has some limited caching support. It also has an option that only generates the value of your tradeable items; ergo, you can both revel in the riches you've bound to your account and get excited about the un-accumulated riches your tradeable items could give you.
 
 ### Gain
 
