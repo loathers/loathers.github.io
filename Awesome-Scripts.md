@@ -81,6 +81,14 @@ If you would like to submit a script to be placed on this page, please post in t
 
 **ChIT** is an upgraded character pane. It features a vastly customizable set of tiles that can be moved, twiddled, and re-sized to create a perfect view of what you need to know about your character. Many speed ascenders use it explicitly for the additional support it gives for quick equipment swaps, familiar management, easy buff shrugging & management, and highlighted timers that allow you to remind yourself of future actions you should do in future turns. It is under active development and generally supports IOTMs relatively soon after they are released; if you have ChIT installed and notice that new IOTMs are not supported, please check the GitHub to see if an update was pushed, and consider deleting/re-installing; due to the "always on" nature of ChIT vs other scripts, it is slightly more common for people to experience issues where ChIT does not properly update. Soolar is an active member on the [ASS discord](https://discord.gg/8p7hh8BRSF) and is actively developing ChIT; if you have questions, please post issues on the GitHub or reach out in the **#mafia-and-scripting** channel. 
 
+### Bale's Relay Overrides
+
+| owner | link | usage |
+|---------|------|---------|
+| Bale (#754005) | [KoLMafia Forum Thread](https://kolmafia.us/threads/bales-relay-overrides.12644/) | A variety of different formats; see description |
+
+Bale is an old-time scripter who made a truly absurd number of helpful and powerful scripts. **Bale's Relay Overrides** is a difficult-to-summarize series of scripts that impact a ton of elements of the game in the relay browser. A handful of old classics include a leaderboard script that highlights gold/silver/bronze commendation holders, a wiki-links script that adds links to KOL Wiki pages in all item descriptions, [and DarthNed's Source Terminal GUI that requires a few less clicks than Ezandora's script below](https://kolmafia.us/threads/bales-relay-overrides.12644/page-14#post-137665). One important caveat -- these scripts are no longer supported, as Bale is no longer an active KOL player. That said, very few of these scripts have seen any errors or bugs in the last 7 years, so it is generally unlikely you'll see major bugs or issues from any of them. If you do, we would recommend posting about them in the forum thread linked above for other helpful KoLMafia scripters to try and assist you, or reach out in the **#mafia-and-scripting** channel in the [ASS discord](https://discord.gg/8p7hh8BRSF). If you choose to update any of these scripts, let us know and we'll link a new version on this page! 
+
 ## Relay (Supplemental UI for IOTMs)
 
 ### Briefcase
