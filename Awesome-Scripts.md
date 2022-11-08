@@ -188,6 +188,14 @@ Bale is an old-time scripter who made a truly absurd number of helpful and power
 
 In a nutshell, **Gain** is an efficient buffing script. It will analyze pricing on various buff options and get the user to the cheapest possible configuration that achieves their goals. As the help file states, `gain 400 initiative` is a command that will figure out the most cost-efficient way to get your character to 400 initiative and get you there. This is most useful in the context of other scripts, but can be useful in limited scenarios within an ascension, for instance if you are trying to quickly complete an ascension and need to hit a specific threshold for a specific test. As with other scripts by Ezandora, Gain is not actively updated or maintained, but has not required significant changes in years, so likely will still work very well for your purposes. It relies on Mafia's background data when running its calculations, so it is likely it will still evaluate things that were released after the script's most recent update (in February 2021, as of this writing). 
 
+### KoLGrimace
+
+| owner | link | usage |
+|---------|------|---------|
+| Irrat (#3469406) | [KolGrimace GitHub](https://github.com/libraryaddict/KolGrimace/) | Run the script in the GCLI |
+
+**KoLGrimace.js** is a script that does one thing, and does it well. It provides you a one-line answer to the rate of human monsters vs aliens in the Domed City of Grimacia, a zone in which adventurers can farm Maps to Safety Shelter Grimace Prime. This tells you days where it is optimal to farm up maps to Safety Shelter Grimace, if you want to farm those maps so you can build a stockpile of Distention Pills and Dog Hair Pills. Simple but useful!
+
 ### ScotchLog
 
 | owner | link | usage | 
