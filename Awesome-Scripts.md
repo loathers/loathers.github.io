@@ -33,7 +33,7 @@ If you would like to submit a script to be placed on this page, please post in t
 
 | owner | link | usage |
 |---------|------|---------|
-| [L. A. S. S.](https://github.com/Loathing-Associates-Scripting-Society) | [freecandy GitHub](https://github.com/loathing-Associates-Scripting-Society/freecandydotexe) | Run the script in the GCLI |
+| [Loathers](https://github.com/loathers) | [freecandy GitHub](https://github.com/loathers/freecandydotexe) | Run the script in the GCLI |
 
 **freecandydotexe** is a script meant to run a large gob of turns for trick or treating. In KOL, Halloween is a massively valuable exercise, often netting users tens of millions of meat in a single day; freecandy is a script that both trick or treats and fights things like guaranteed kramcos, voting monsters, and nemesis hitmen. It handles familiar swaps (to properly utilize your Trick or Treating Tot) and fills your Pantsgiving stomach. Freecandydotexe is actively developed, and (with some exceptions) will support new IOTMs within 1-2 Halloweens of the IOTM's introduction. For questions, bug reports, or comments, please post relevant details in the **#freecandydotexe support thread** thread within the **#garbage-collector** channel on the [ASS discord](https://discord.gg/8p7hh8BRSF).
 
@@ -69,7 +69,7 @@ If you would like to submit a script to be placed on this page, please post in t
 
 | owner | link | usage |
 |---------|------|---------|
-| [L. A. S. S.](https://github.com/Loathing-Associates-Scripting-Society) | [TourGuide GitHub](https://github.com/loathing-Associates-Scripting-Society/TourGuide) | After installing, select it from the topbar of the relay browser to run the assistant |
+| [Loathers](https://github.com/loathers) | [TourGuide GitHub](https://github.com/loathers/TourGuide) | After installing, select it from the topbar of the relay browser to run the assistant |
 
 **TourGuide** is, effectively, an advice script. It provides a large-scale summary of all available resources that you -could- be using in KoL, with things like lists of available free banishes, steps to complete active quests, tips on how to finish tasks in the fewest turns, and large bright reminders when you have a limited use resource up that you may want to go to a specific place to use. TourGuide is based on the script "Guide" by [Ezandora](https://github.com/Ezandora); while it is based on the bones of Guide, TourGuide has evolved into a vastly different fork of the original brainchild, with roughly two years of extra IOTMs covered and added to the script, along with several additional features. TourGuide developers acknowledge and appreciate Ezandora's work in creating the scaffolding behind TourGuide.
 
@@ -157,13 +157,20 @@ Bale is an old-time scripter who made a truly absurd number of helpful and power
 
 ## Miscellaneous
 
-### Snapshot Maker (cc_snapshot)
+### Snapshot Maker (av_snapshot)
 
 | owner | link | usage |
 |---------|------|---------|
-| CheeseCookie (# N/A) | [cc_snapshot on the KoL Forums](http://forums.kingdomofloathing.com/vb/showthread.php?t=218735) | Run the script in the GCLI |
+| Aventuristo (#3028125) | [av_snapshot on the KoL Forums](http://forums.kingdomofloathing.com/vb/showthread.php?t=250707) | Run the script in the GCLI |
 
-**Snapshot Maker** (more commonly known as **cc_snapshot**) is a script that populates a public, shareable webpage you can use to show people what you own in KoL. This page will display every IOTM that is bound to your account, what skills you have permed, what your character has consumed, what tattoos your character has unlocked, and whether or not you own a variety of cool semi-relevant items from years prior. When other KOL players ask to see your snapshot (or talk about "greenboxen"), this is what they're talking about. One semi-important note -- Cheesecookie no longer plays KoL, so updates (while relatively consistent) are not frequently done until Cheese is bothered in the linked thread on the KoL forum. Also, the HTTPS certificate in the snapshots is semi-broken, so when looking at your own snapshot linked from the GCLI, we would recommend changing the linked URL to use HTTP instead of HTTPS so you don't get a dire-looking invalid certificate error. 
+**Snapshot Maker** (more commonly known as **av_snapshot**) is a script that populates a public, shareable webpage you can use to show people what you own in KoL. This page will display every IOTM that is bound to your account, what skills you have permed, what your character has consumed, what tattoos your character has unlocked, and whether or not you own a variety of cool semi-relevant items from years prior. When other KOL players ask to see your snapshot (or talk about "greenboxen"), this is what they're talking about. This is a more-updated fork of cc_snapshot, a long-used script by Cheesecookie. Thanks Cheesecookie!
+
+### Greenbox
+| owner | link | usage |
+|---------|------|---------|
+| [Loathers](https://github.com/loathers) | [Greenbox on GitHub](https://github.com/loathers/greenbox) | Run the script in the GCLI |
+
+**Greenbox** is a new format for the aforementioned av_snapshot. It is coded in Typescript, with a slick React-based GUI. It is under active development, and while it does not yet have as many Greenboxen for the aspiring Greenboxer to find compared to av_snapshot, it is trying its best. It also has a cool logo! Wow! Amazing!
 
 ### KoL AccountVal.js
 
@@ -180,6 +187,14 @@ Bale is an old-time scripter who made a truly absurd number of helpful and power
 | Ezandora (#1557284) | [Gain GitHub](https://github.com/Ezandora/Gain) | Run the script in the GCLI |
 
 In a nutshell, **Gain** is an efficient buffing script. It will analyze pricing on various buff options and get the user to the cheapest possible configuration that achieves their goals. As the help file states, `gain 400 initiative` is a command that will figure out the most cost-efficient way to get your character to 400 initiative and get you there. This is most useful in the context of other scripts, but can be useful in limited scenarios within an ascension, for instance if you are trying to quickly complete an ascension and need to hit a specific threshold for a specific test. As with other scripts by Ezandora, Gain is not actively updated or maintained, but has not required significant changes in years, so likely will still work very well for your purposes. It relies on Mafia's background data when running its calculations, so it is likely it will still evaluate things that were released after the script's most recent update (in February 2021, as of this writing). 
+
+### ScotchLog
+
+| owner | link | usage | 
+|---------|------|---------|
+| Captain Scotch () | [ScotchLog GitHub](https://github.com/docrostov/ScotchLog) | Run the script in the GCLI |
+
+**ScotchLog** is a log parser. It does what it says. It was coded by a fiddly speedrunner who also happened to write this document; as a result, it tracks a few more things than [other log parsers](https://kolmafia.us/threads/runlogsummary.22963/) do, like freerun usage and (for unrestricted runs) loadouts of key choices the user made during their run. Examining one's run logs for turn leaks, routing improvements, RNG screw, and general strategic play is usually a good way to improve your play and become better at the game. You probably don't need all the data logged by ScotchLog, but you might need some of it, so it might be for you. I dunno, dogg. I don't know your life.
 
 # Awesome KoL Scripts... that require Compiling
 
