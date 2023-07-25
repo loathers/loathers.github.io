@@ -15,7 +15,7 @@ remote_theme: pages-themes/minimal@v0.2.0
 baseurl: KoL-Scripting-Resources/
 
 # the actual url
-url: https://loathers.github.io/
+url: https://loathers.github.io
 repository: loathers/loathers.github.io
 
 # To populate, add a descriptive title and the name of the file w/ html
