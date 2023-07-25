@@ -15,7 +15,8 @@ remote_theme: pages-themes/minimal@v0.2.0
 baseurl: KoL-Scripting-Resources/
 
 # the actual url
-url: https://loathing-associates-scripting-society.github.io/
+url: https://loathers.github.io/
+repository: loathers/loathers.net
 
 # To populate, add a descriptive title and the name of the file w/ html
 #   instead of md. Put it under sublinks if you would like.
