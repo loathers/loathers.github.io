@@ -16,7 +16,7 @@ baseurl: KoL-Scripting-Resources/
 
 # the actual url
 url: https://loathers.github.io/
-repository: loathers/loathers.net
+repository: loathers/loathers.github.io
 
 # To populate, add a descriptive title and the name of the file w/ html
 #   instead of md. Put it under sublinks if you would like.
