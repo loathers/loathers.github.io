@@ -12,8 +12,6 @@ author: L. A. S. S.
 
 remote_theme: pages-themes/minimal@v0.2.0
 
-baseurl: KoL-Scripting-Resources/
-
 # the actual url
 url: https://loathers.github.io
 repository: loathers/loathers.github.io
