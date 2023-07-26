@@ -16,9 +16,9 @@ CS scripts tend to be extraordinarily personal. Because the path rewards owning 
 
 | creator | link | runtime | turns | workshed | garden |
 |---------|------|---------|-------|----------|--------|
-| [phreddrickkv2 (#1515124)](https://www.cheesellc.com/kol/profile.php?u=phreddrickkv2) | [here](https://github.com/horrible-little-slime/phccs) | 5-6 minutes | 107-110 turns | asdon | peppermint |
+| [phreddrickkv2 (#1515124)](https://api.aventuristo.net/av-snapshot?u=phreddrickkv2) | [here](https://github.com/horrible-little-slime/phccs) | 10-11 minutes | ~90 turns | asdon | peppermint |
 
-**phccs** is descended from bean-hccs, but has diverged significantly in structure. It is made for _very_ high-greenbox accounts. It slices the various CS tests into their own files for legibility, and entirely eschews the use of the maximizer in favor of preprogrammed outfits, in order to cut down on runtime.
+**phccs** is originally descended from bean-hccs, but has been rewritten enough times that at this point the link exists only in spirit. It currently uses an interesting twist on the classic grimoire framework, constructing and destructing separate engines for each Test to mesh more nicely with libram's Community Service logging support. Its maintainer primarily runs it in softcore, but it continues to function nicely in hardcore.
 
 ## manny-hccs
 
