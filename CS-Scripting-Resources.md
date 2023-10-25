@@ -20,6 +20,20 @@ CS scripts tend to be extraordinarily personal. Because the path rewards owning 
 
 **phccs** is originally descended from bean-hccs, but has been rewritten enough times that at this point the link exists only in spirit. It currently uses an interesting twist on the classic grimoire framework, constructing and destructing separate engines for each Test to mesh more nicely with libram's Community Service logging support. Its maintainer primarily runs it in softcore, but it continues to function nicely in hardcore.
 
+## InstantSCCS 
+| creator | link | runtime | turns | workshed | garden |
+|---------|------|---------|-------|----------|--------|
+| WARriorer (#1634187) | [here](https://github.com/Pantocyclus/InstantSCCS) | 7-20 minutes | 94-320 turns | model train set | any |
+
+**InstantSCCS** is a highly configurable softcore 1-day CS script designed for low to relatively-high shiny accounts. Unlike many earlier scripts that depend heavily on old IotMs, the core route is planned around 7 relatively recent IotMs from 2022 and 2023, with many being optional as InstantSCCS also supports an extensive range of old to new IotMs (many of which provide subtitutes of functionality required of the original 7). At the highest end (with the right configuration), the script currently boasts a 1/94 in hardcore CS (without pulls and modifications; as of Oct 2023) while remaining competitive in resource and organ usage with other profit-optimized high shiny CS scripts.
+
+## FolgerCS
+| creator | link | runtime | turns | workshed | garden |
+|---------|------|---------|-------|----------|--------|
+| Seraphiii (#1829137) | [here](https://github.com/Ignose/FolgerCS) | 7-10 minutes | 115-180 turns | asdon/trainset | any |
+
+**FolgerCS** is a fork of InstantSCCS focused on profit maximization, choosing to skip resources that would be negative ROI to use. It's class agnostic, though works best for Pastamancer and Seal Clubber. It is designed to work for a variety of account states, limiting consumption to Astral Pilsners and Legendary Pizza. Borrowed time is optional.
+
 ## manny-hccs
 
 | creator | link | runtime | turns | workshed | garden |
