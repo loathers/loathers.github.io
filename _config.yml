@@ -18,7 +18,7 @@ repository: loathers/loathers.github.io
 
 # To populate, add a descriptive title and the name of the file w/ html
 #   instead of md. Put it under sublinks if you would like.
-navbarData: 
+navbarData:
   - title: An Introduction to KOL Scripting
     url: KoL-Scripting-Introduction.html
   - title: ASH Overview
@@ -37,10 +37,10 @@ navbarData:
     url: Scripting-CS.html
 
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
 
 # When testing locally, remember to run:
 #   $env:path += "C:\Ruby30-x64\bin;"
 #   bundle install
 #   and then bundle exec jekyll serve
-# due to how much windows hates Ruby and will not play nicely with its binaries 
+# due to how much windows hates Ruby and will not play nicely with its binaries

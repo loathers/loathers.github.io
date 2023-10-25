@@ -1,10 +1,15 @@
 # ASH
+
 ## Using Common ASH Functions (via Example)
+
 There are a number of useful starter ASH tutorials on the KoLMafia wiki and scattered about Mafia's old home on sourceforge. One that I find particularly useful is [this set of two basic examples of ASH scripts](https://kolmafia.sourceforge.io/advanced.html). At a high level, when thinking about how to use ASH (or, really, any new programming language), the best way to go about it is to start with a small abstract piece of something useful and extend your reach beyond it by bringing in things that add complication and heft to the initial goal. As a start, let's use a very simple, very effective use-case: drinking a nightcap, via the "drink" command.
+
 ```ash
 drink(1,$item[emergency margarita]);
 ```
+
 This is easy and straightforward. You could simply save this as nightCap.ash, run it at the end of every day, and you'd be good on your last drink of the day so long as you always had an Emergency Margarita in your inventory. But what if you didn't? It turns out nightcaps can be a bit more complicated! Let's add a check that purchases an emergency margarita for you, if you don't have one lying around.
+
 ```ash
 item nightcap = $item[emergency margarita];
 
@@ -12,7 +17,8 @@ if (available_amount(nightcap) == 0) buy(1, nightcap);
 
 drink(1, nightcap);
 ```
-But wait! What if a nefarious actor bought up every single emergency margarita in the mall? Computers are smart, but they're also extraordinarily literal -- if you tell it to purchase a margarita, it will do so, no matter how much meat they cost. Let's add a catch that aborts if margaritas become way too expensive to justify. 
+
+But wait! What if a nefarious actor bought up every single emergency margarita in the mall? Computers are smart, but they're also extraordinarily literal -- if you tell it to purchase a margarita, it will do so, no matter how much meat they cost. Let's add a catch that aborts if margaritas become way too expensive to justify.
 
 ```ash
 item nightcap = $item[emergency margarita];
@@ -107,11 +113,12 @@ if (have_familiar($familiar[left-hand man])) use_familiar($familiar[left-hand ma
 maximize("Adventures", false);
 ```
 
-Fantastic. We have a script. We went from a very simple [drink()](https://wiki.kolmafia.us/index.php/Drink) statement into a compact script that manages to use quite a few functions in its operation, including [have](https://wiki.kolmafia.us/index.php/Have_familiar)/[use_familiar](https://wiki.kolmafia.us/index.php/Use_familiar), the [$item datatype](https://wiki.kolmafia.us/index.php/Item), [my_inebriety](https://wiki.kolmafia.us/index.php/My_inebriety), [available_amount](https://wiki.kolmafia.us/index.php/Available_amount), [print](https://wiki.kolmafia.us/index.php/Print) statements, [control flow with while/if/abort](https://wiki.kolmafia.us/index.php/Control_Structures), and the notoriously useful [maximize()](https://wiki.kolmafia.us/index.php/Maximize). Pretty cool! 
+Fantastic. We have a script. We went from a very simple [drink()](https://wiki.kolmafia.us/index.php/Drink) statement into a compact script that manages to use quite a few functions in its operation, including [have](https://wiki.kolmafia.us/index.php/Have_familiar)/[use_familiar](https://wiki.kolmafia.us/index.php/Use_familiar), the [$item datatype](https://wiki.kolmafia.us/index.php/Item), [my_inebriety](https://wiki.kolmafia.us/index.php/My_inebriety), [available_amount](https://wiki.kolmafia.us/index.php/Available_amount), [print](https://wiki.kolmafia.us/index.php/Print) statements, [control flow with while/if/abort](https://wiki.kolmafia.us/index.php/Control_Structures), and the notoriously useful [maximize()](https://wiki.kolmafia.us/index.php/Maximize). Pretty cool!
 
-When you're building your own scripts, one of the best ways to learn is to simply pick a simple task and start thinking through what kind of complications could make a simple thing less straightforward. When you figure those out, and start solving them via mafia functions, you quickly turn a very simple one-line script into a larger scale construction that teaches you about all sorts of new functions and commands. 
+When you're building your own scripts, one of the best ways to learn is to simply pick a simple task and start thinking through what kind of complications could make a simple thing less straightforward. When you figure those out, and start solving them via mafia functions, you quickly turn a very simple one-line script into a larger scale construction that teaches you about all sorts of new functions and commands.
 
 ## Examples of High-Level ASH Code
+
 TheDictator (a player /dev) has many complex ASH scripts available on [his pastebin](https://pastebin.com/u/thedictator).
 
 [Autoscend](https://github.com/Loathing-Associates-Scripting-Society/autoscend) is a LASS-maintained general-use ascension script written in ASH.
@@ -122,8 +129,8 @@ Finally, as you develop your own scripts, be sure to check the [KoLMafia forums]
 
 ## The Pros and Cons of ASH
 
-| Pros | Cons |
-| ---- | ---- |
-| Quick & easy to use for short and simple scripts; can deploy without any delay | Can get messy when doing more complicated processes |
-| Automatically can access all KoLMafia functions, doesn't require importing | As it is KoL-specific, solving errors can be a bit harder |
-| Very easy to find KOL-specific examples for how to do things in ASH | Has a *ton* of administrative overhaul in large scripts |
+| Pros                                                                           | Cons                                                      |
+| ------------------------------------------------------------------------------ | --------------------------------------------------------- |
+| Quick & easy to use for short and simple scripts; can deploy without any delay | Can get messy when doing more complicated processes       |
+| Automatically can access all KoLMafia functions, doesn't require importing     | As it is KoL-specific, solving errors can be a bit harder |
+| Very easy to find KOL-specific examples for how to do things in ASH            | Has a _ton_ of administrative overhaul in large scripts   |

@@ -4,64 +4,78 @@
 @import "jekyll-theme-minimal";
 
 body {
-    background-color: #36393F;
-    padding: 50px;
-    font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #B1BCC3;
-    font-weight: 400;
+  background-color: #36393f;
+  padding: 50px;
+  font:
+    14px/1.5 "Noto Sans",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+  color: #b1bcc3;
+  font-weight: 400;
 }
 
 code {
-    color: #e3d2d2;
+  color: #e3d2d2;
 }
 
-pre, pre.highlight, .highlight {
-    background-color: #484b50;
+pre,
+pre.highlight,
+.highlight {
+  background-color: #484b50;
 }
 
 th {
-    color: #e3d2d2;
+  color: #e3d2d2;
 }
 
 strong {
-    color: #e3d2d2;
+  color: #e3d2d2;
 }
 
 h1 {
-    color: white;
+  color: white;
 }
 
-h2, h3, h4, h5 {
-    color: #EBE5E2;
+h2,
+h3,
+h4,
+h5 {
+  color: #ebe5e2;
 }
-  
+
 p {
-    color: #99AAB5;
+  color: #99aab5;
 }
 
 a:link {
-    color: #F9C9A9;
+  color: #f9c9a9;
 }
 
-a:hover, a:active, a:visited {
-    color:#FFC6A0;
-    font-weight: 400;
+a:hover,
+a:active,
+a:visited {
+  color: #ffc6a0;
+  font-weight: 400;
 }
 
-h2 a:hover, h2 a:active, h2 a:visited {
-    color:#FFC6A0;
-    font-weight: bold;
+h2 a:hover,
+h2 a:active,
+h2 a:visited {
+  color: #ffc6a0;
+  font-weight: bold;
 }
 
 wrapper {
-    background-color: #36393F;
+  background-color: #36393f;
 }
 
 header {
-    background-color: #3f4247;
-    padding: 10px;
+  background-color: #3f4247;
+  padding: 10px;
 }
 
 section {
-    background-color: #36393F;
+  background-color: #36393f;
 }
